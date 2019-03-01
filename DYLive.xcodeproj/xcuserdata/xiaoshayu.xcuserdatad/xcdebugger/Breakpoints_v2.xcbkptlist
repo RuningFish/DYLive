@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DYLive/Classed/Main/DYTabBarViewController.swift"
+            timestampString = "573059620.086365"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "getController(name:title:oriImage:selImage:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DYLive/Classed/Main/DYNavigationBar.swift"
+            timestampString = "573067982.0921659"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "setSubviews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DYLive/Classed/Main/DYNavigationBar.swift"
+            timestampString = "573067982.092684"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "contentView"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DYLive.DYNavigationBar.init(frame: __C.CGRect) -&gt; DYLive.DYNavigationBar"
+                  moduleName = "DYLive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piyingke/Documents/DYLive/DYLive/Classed/Main/DYNavigationBar.swift"
+                  timestampString = "573060670.94717"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DYLive.DYNavigationBar.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;DYLive.DYNavigationBar&gt;"
+                  moduleName = "DYLive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piyingke/Documents/DYLive/DYLive/Classed/Main/DYNavigationBar.swift"
+                  timestampString = "573060670.952754"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DYLive.DYNavigationBar.contentView.getter : __ObjC.UIView"
+                  moduleName = "DYLive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piyingke/Documents/DYLive/DYLive/Classed/Main/DYNavigationBar.swift"
+                  timestampString = "573060670.9562531"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "152">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; __ObjC.UIView in DYLive.DYNavigationBar.contentView.getter : __ObjC.UIView"
+                  moduleName = "DYLive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piyingke/Documents/DYLive/DYLive/Classed/Main/DYNavigationBar.swift"
+                  timestampString = "573060670.965969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DYLive.DYNavigationBar.contentView.setter : __ObjC.UIView"
+                  moduleName = "DYLive"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/piyingke/Documents/DYLive/DYLive/Classed/Main/DYNavigationBar.swift"
+                  timestampString = "573060670.976369"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "120">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
