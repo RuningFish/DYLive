@@ -38,7 +38,6 @@ class DYNavigationBar: UIView {
         
         
         if isLogin {
-            print("xxxxxx")
             searchView.snp.makeConstraints({ (make) in
                 make.left.equalTo(loginImageView.snp.right).offset(10)
                 make.width.equalTo(100)
@@ -59,7 +58,6 @@ class DYNavigationBar: UIView {
             })
             
         }else{
-            print("sssss")
             historyView.snp.makeConstraints({ (make) in
                 make.right.equalToSuperview().offset(-5)
                 make.width.height.equalTo(20)

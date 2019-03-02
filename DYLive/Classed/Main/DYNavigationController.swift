@@ -12,7 +12,7 @@ class DYNavigationController: UINavigationController {
 
     lazy var dyNavBar = { () -> DYNavigationBar in
         let navBar = DYNavigationBar()
-        navBar.frame = CGRect(x:0,y:0,width:UIScreen.main.bounds.width,height:88)
+        navBar.frame = CGRect(x:0,y:0,width:KScreenWidth,height:KNavigationHeight)
         navBar.backgroundColor = UIColor.orange
         return navBar
     }()
