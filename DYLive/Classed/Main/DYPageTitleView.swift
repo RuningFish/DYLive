@@ -95,6 +95,10 @@ extension DYPageTitleView{
         oldLabel.font = UIFont(name: "PingFangSC-Light", size: 14)
         // 更新currentIndex
         current = newLabel.tag
+        // 滚动
+//        let w = KScreenHeight/6.0
+//        scrollowView.scrollRectToVisible(CGRect.make(130, 0, KScreenWidth, 44), animated: true)
+        
         // 通知代理
         self.delegate?.pageTitleView(titleView: self, selectIndex: newLabel.tag)
         print("---------")

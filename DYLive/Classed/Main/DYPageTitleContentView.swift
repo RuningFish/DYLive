@@ -35,9 +35,9 @@ class DYPageTitleContentView: UIView {
     }
     
     // lazy
-    lazy var collectionView = { () -> UICollectionView in
+    lazy var collectionView :UICollectionView = { [unowned self] in
         let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: CGRect.make(0, 0, KScreenHeight,self.frame.size.height),collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: CGRect.make(0, 0, KScreenWidth,KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight),collectionViewLayout: layout)
         layout.itemSize = CGSize(width:KScreenWidth,height:self.frame.size.height)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
@@ -45,7 +45,7 @@ class DYPageTitleContentView: UIView {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = true
         collectionView.bounces = false
-        collectionView.delegate = self as! UICollectionViewDelegate
+        collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: Identifier)
         return collectionView
@@ -88,7 +88,7 @@ extension DYPageTitleContentView : UICollectionViewDataSource{
     
 }
 
-extension DYPageTitleContentView : UICollectionViewDelegate{
+extension DYPageTitleContentView {
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         forbid = false
@@ -134,7 +134,7 @@ extension DYPageTitleContentView : UICollectionViewDelegate{
         }
         
         
-        print("progress :\(progress) \("currentIndex:") \(currentIndex)  \("targetIndex:") \(targetIndex)")
+//        print("progress :\(progress) \("currentIndex:") \(currentIndex)  \("targetIndex:") \(targetIndex)")
         delegate?.pageTitleContentViewDidScroll(pageTitleView: self, progress: progress, currentIndex: currentIndex, targetIndex: targetIndex)
     }
 }

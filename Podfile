@@ -7,4 +7,6 @@ target 'DYLive' do
 
   # Pods for DYLive
   pod 'SnapKit', '~> 4.0.0'
+  pod 'Alamofire', '~> 4.5.1'
+  pod 'Kingfisher', '~> 4.0.1'
 end

@@ -20,12 +20,16 @@ class DYRecommendViewController: UIViewController {
     // 推荐页推荐内容展示页
     lazy var pageContent = { () -> DYPageTitleContentView in
         var childVc = [UIViewController]()
-        for _ in 0..<7{
+        let classify  = DYClassify()
+        let recommend = DYRecommend()
+        childVc.append(classify)
+        childVc.append(recommend)
+        for _ in 0..<5{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor.random_color()
             childVc.append(vc)
         }
-        let contentView = DYPageTitleContentView(frame:CGRect.make(0, KNavigationHeight + KStatusBarHeight, KScreenWidth, KScreenHeight - KNavigationHeight - KPageTitleHeight),childVc:childVc, parentVc:self)
+        let contentView = DYPageTitleContentView(frame:CGRect.make(0, KNavigationHeight + KStatusBarHeight, KScreenWidth, KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight),childVc:childVc, parentVc:self)
         return contentView
     }()
     
@@ -37,6 +41,13 @@ class DYRecommendViewController: UIViewController {
         pageTitle.delegate = self
         pageContent.delegate = self
         // Do any additional setup after loading the view.
+        
+        let parameters = ["limit" : "4", "offset" : "0","client_sys" : "ios", "time" : NSDate.getCurrentTime()]
+        let url = "http:capi.douyucdn.cn/api/v1/getbigDataRoom"
+        let param = ["client_sys" : "ios","time" : NSDate.getCurrentTime()]
+        HttpTool.manager(method:RequestMethod.Get, url:url,param:param){(result) in
+//            print("\(result)")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +66,6 @@ extension DYRecommendViewController: DYPageTitleViewDelegate{
 
 extension DYRecommendViewController: DYPageTitleContentViewDelegate{
     func pageTitleContentViewDidScroll(pageTitleView: DYPageTitleContentView, progress: CGFloat, currentIndex: Int, targetIndex: Int) {
-        print("DYPageTitleContentViewDelegate")
         pageTitle.updateTitleView(progress: progress, currentIndex: currentIndex, targetIndex: targetIndex)
     }
 }
