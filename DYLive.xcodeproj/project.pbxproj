@@ -34,6 +34,7 @@
 		EA4A4BA3222800BA0030B8DF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA2222800BA0030B8DF /* Image.swift */; };
 		EA4A4BA5222805E80030B8DF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA4222805E80030B8DF /* Common.swift */; };
 		EA4A4BA7222823890030B8DF /* DYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA6222823890030B8DF /* DYNavigationBar.swift */; };
+		EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */; };
 		EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */; };
 		EA9C2F47222A6DA200C5863D /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F46222A6DA200C5863D /* HttpTool.swift */; };
 		EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F48222A887900C5863D /* DYRecommend.swift */; };
@@ -75,6 +76,7 @@
 		EA4A4BA2222800BA0030B8DF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		EA4A4BA4222805E80030B8DF /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		EA4A4BA6222823890030B8DF /* DYNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYNavigationBar.swift; sourceTree = "<group>"; };
+		EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseViewController.swift; sourceTree = "<group>"; };
 		EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabBarItem.swift; sourceTree = "<group>"; };
 		EA9C2F46222A6DA200C5863D /* HttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		EA9C2F48222A887900C5863D /* DYRecommend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommend.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				EA21BCAE2228D5D2001DBD61 /* DYPageTitleView.swift */,
 				EA21BCB02229578A001DBD61 /* DYPageTitleContentView.swift */,
 				EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */,
+				EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 				EA4A4B942227E6160030B8DF /* DYEntertainmentViewController.swift in Sources */,
 				EA21BCAF2228D5D2001DBD61 /* DYPageTitleView.swift in Sources */,
 				EA4A4B982227E6590030B8DF /* DYBarViewController.swift in Sources */,
+				EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */,
 				EA4A4BA3222800BA0030B8DF /* Image.swift in Sources */,
 				EA4A4BA7222823890030B8DF /* DYNavigationBar.swift in Sources */,
 				EA4A4B9E2227E9790030B8DF /* DYTabBarViewController.swift in Sources */,

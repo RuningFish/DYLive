@@ -13,7 +13,13 @@ private let KNormalItemH :CGFloat = KNormalItemW * 9/16 + CGFloat(50)
 
 let KNormalIdentifier = "KNormalIdentifier"
 let KHeaderViewIdentifier = "KHeaderViewIdentifier"
-class DYRecommend: UIViewController {
+
+enum RecommendScrollDirection :String {
+    case up = "UP"
+    case down = "DOWN"
+}
+
+class DYRecommend: UIViewController,UICollectionViewDelegate {
     
     // 推荐页的数据源
     var recommendData  = [[Any]]()
@@ -28,21 +34,22 @@ class DYRecommend: UIViewController {
     }
     
     // lazy
-    lazy var collectionView = { () -> UICollectionView in
+    lazy var collectionView :UICollectionView = { [unowned self]  in
         
         let height = KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight
         let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: CGRect.make(0, 0, KScreenWidth,height),collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: self.view.bounds,collectionViewLayout: layout)
         layout.itemSize = CGSize(width:KNormalItemW,height:KNormalItemH)
         layout.headerReferenceSize = CGSize(width:KScreenWidth,height:50)
         layout.minimumLineSpacing = 0//KItemMargin
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .vertical
         collectionView.showsHorizontalScrollIndicator = false
+        collectionView.showsVerticalScrollIndicator = false
         collectionView.isPagingEnabled = false
         collectionView.bounces = false
-//        collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.backgroundColor = UIColor.white
 //        collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
         collectionView.register(UINib(nibName: "DYRecommendNormalCell", bundle: nil), forCellWithReuseIdentifier: KNormalIdentifier)
@@ -52,6 +59,20 @@ class DYRecommend: UIViewController {
         
         return collectionView
     }()
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = view.bounds
+        print("viewDidLayoutSubviews \(view.frame.height)")
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        print("viewWillLayoutSubviews")
+        collectionView.snp.makeConstraints { (make) in
+            make.top.left.bottom.right.equalToSuperview()
+        }
+    }
     
     func loadData(){
         let url = "http:capi.douyucdn.cn/api/v1/getbigDataRoom"
@@ -106,27 +127,25 @@ extension DYRecommend : UICollectionViewDataSource{
     }
 }
 
-extension DYPageTitleContentView :UICollectionViewDelegate{
+extension DYRecommend :UIScrollViewDelegate{
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        print("-------------------> scrollViewDidScroll")
+        let contentOffsetY = scrollView.contentOffset.y
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DYRecommendNotification"), object: contentOffsetY)
+    }
+    
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         let pan = scrollView.panGestureRecognizer
         let velocity = pan.velocity(in: scrollView).y
+        let direction :RecommendScrollDirection = (velocity < -15) ?.up:.down
         
-        print("7777")
-        let navVC = DYNavigationController.Singleton.self as? UINavigationController
-        if velocity < -15 {
-            //上滑
-            
-            navVC?.setNavigationBarHidden(true, animated: true)
-            //状态栏颜色为黑色
-            UIApplication.shared.statusBarStyle = .default
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "111"), object: nil)
-            
-        } else if velocity > 15 {
-            //下滑
-            navVC?.setNavigationBarHidden(false, animated: true)
-            //状态栏颜色为白色
-            UIApplication.shared.statusBarStyle = .lightContent
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "222"), object: nil)
+        let height = KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight
+        if  velocity < -15 {
+            self.view.frame = CGRect.make(0, -22, KScreenWidth, 641)
+        }else if velocity > 15{
+            self.view.frame = CGRect.make(0, 0, KScreenWidth, 597)
         }
+        NotificationCenter.xsyPostNotification(postName: KRecommendContentScrollNotification, object: direction)
     }
 }

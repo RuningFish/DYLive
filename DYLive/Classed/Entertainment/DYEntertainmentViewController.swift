@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DYEntertainmentViewController: UIViewController {
+class DYEntertainmentViewController: DYBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

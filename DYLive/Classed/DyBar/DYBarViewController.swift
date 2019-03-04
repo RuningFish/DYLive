@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DYBarViewController: UIViewController {
+class DYBarViewController: DYBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

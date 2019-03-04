@@ -23,6 +23,7 @@ class DYNavigationBar: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
         contentView.snp.makeConstraints { (make) -> () in
             make.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
@@ -75,7 +76,7 @@ class DYNavigationBar: UIView {
     
     func setSubviews(){
         print("DYNavigationBar")
-        contentView.backgroundColor = UIColor.white
+        contentView.backgroundColor = UIColor.clear
         self.addSubview(contentView)
         contentView.addSubview(loginImageView)
         contentView.addSubview(searchView)

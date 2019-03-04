@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DYDiscoverViewController: UIViewController {
+class DYDiscoverViewController: DYBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

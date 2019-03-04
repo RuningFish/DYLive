@@ -13,7 +13,7 @@ protocol DYPageTitleContentViewDelegate:class {
 }
 
 let Identifier = "Identifier"
-class DYPageTitleContentView: UIView {
+class DYPageTitleContentView: UIView,UICollectionViewDelegate {
 
     var delegate: DYPageTitleContentViewDelegate?
     var childVc :[UIViewController]
@@ -27,7 +27,7 @@ class DYPageTitleContentView: UIView {
         super.init(frame: frame)
         
         setupUI()
-        
+        backgroundColor = UIColor.green
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,8 +36,9 @@ class DYPageTitleContentView: UIView {
     
     // lazy
     lazy var collectionView :UICollectionView = { [unowned self] in
+        // CGRect.make(0, 0, KScreenWidth,KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight)
         let layout = UICollectionViewFlowLayout()
-        let collectionView = UICollectionView(frame: CGRect.make(0, 0, KScreenWidth,KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight),collectionViewLayout: layout)
+        let collectionView = UICollectionView(frame: self.bounds,collectionViewLayout: layout)
         layout.itemSize = CGSize(width:KScreenWidth,height:self.frame.size.height)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
@@ -50,6 +51,15 @@ class DYPageTitleContentView: UIView {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: Identifier)
         return collectionView
     }()
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        collectionView.snp.makeConstraints { (make) in
+            make.top.left.bottom.right.equalToSuperview()
+        }
+        print("DYPageTitleContentView ---> layoutSubviews \(collectionView.frame.size.height)")
+        
+    }
 }
 
 extension DYPageTitleContentView {
@@ -80,8 +90,11 @@ extension DYPageTitleContentView : UICollectionViewDataSource{
         }
         
         let vc = childVc[indexPath.item]
-        vc.view.frame = cell.contentView.bounds
+//        vc.view.frame = cell.contentView.bounds
         cell.contentView.addSubview(vc.view)
+        vc.view.snp.makeConstraints { (make) in
+            make.top.left.bottom.right.equalToSuperview()
+        }
         
         return cell
     }

@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DYRecommendViewController: UIViewController {
+
+class DYRecommendViewController: DYBaseViewController {
 
     // 推荐页推荐滚动条
     lazy var pageTitle = { () -> DYPageTitleView in
@@ -37,19 +38,43 @@ class DYRecommendViewController: UIViewController {
         super.viewDidLoad()
 
         view.addSubview(pageTitle)
+        view.bringSubview(toFront: pageTitle)
         view.addSubview(pageContent)
         pageTitle.delegate = self
         pageContent.delegate = self
         // Do any additional setup after loading the view.
         
+        view.backgroundColor = UIColor.orange
         let parameters = ["limit" : "4", "offset" : "0","client_sys" : "ios", "time" : NSDate.getCurrentTime()]
         let url = "http:capi.douyucdn.cn/api/v1/getbigDataRoom"
         let param = ["client_sys" : "ios","time" : NSDate.getCurrentTime()]
-        HttpTool.manager(method:RequestMethod.Get, url:url,param:param){(result) in
-//            print("\(result)")
-        }
+        
+//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DYRecommendNotification"), object: contentOffsetY)
+        
+        print("\(pageTitle.frame)")
+        NotificationCenter.default.addObserver(self, selector: #selector(xxx), name:NSNotification.Name(rawValue: KRecommendContentScrollNotification) , object:nil)
     }
 
+   @objc func xxx(noti:Notification) {
+        guard let direction = noti.object as? RecommendScrollDirection else {return}
+        if direction == .up {
+            UIView.animate(withDuration: 0.2) {
+                self.pageTitle.frame = CGRect.make(0, KStatusBarHeight, KScreenWidth, 44)
+            }
+            
+            self.pageContent.frame = CGRect.make(0, KNavigationHeight , KScreenWidth, KScreenHeight - KNavigationHeight - KTabBarHeight )
+            print("pageContrnt的高度 \(pageContent.frame.height)")
+            dyNavBar.frame = CGRect.make(0, 0, KScreenWidth, KNavigationHeight)
+            pageContent.setNeedsLayout()
+        }else if direction == .down{
+            UIView.animate(withDuration: 0.2) {
+                self.pageTitle.frame = CGRect.make(0, KNavigationHeight, KScreenWidth, 44)
+            }
+            
+            pageContent.frame = CGRect.make(0, KNavigationHeight + KStatusBarHeight, KScreenWidth, KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

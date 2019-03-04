@@ -26,6 +26,12 @@ let KBottomSafeAreaHeight : CGFloat = (KTabBarHeight - 49)
 // 推荐页推荐条高度
 let KPageTitleHeight : CGFloat = 44
 
+/*******************************  Notification  ***************************************/
+// 推荐页内容滚动通知
+let KRecommendContentScrollNotification = "KRecommendContentScrollNotification"
+
+
+/*******************************  ------------  ***************************************/
 extension Bundle{
     var namespace : String {
         return   infoDictionary?["CFBundleName"] as? String ?? ""
@@ -55,4 +61,19 @@ extension UIColor{
         return UIColor(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1)
     }
     
+}
+
+
+extension NotificationCenter{
+    class func xsyAddobserver(_ observer: Any, selector:Selector, postName:String, object: Any?){
+        NotificationCenter.default.addObserver(observer, selector: selector, name:NSNotification.Name(rawValue: postName) , object:object)
+    }
+    
+    class func xsyPostNotification(postName:String, object: Any?) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: postName), object: object)
+    }
+    
+    class func xsyRemoveNotification(_ observer: Any, name:String, object: Any?) {
+        NotificationCenter.default.removeObserver(observer, name: NSNotification.Name(rawValue: name), object: object)
+    }
 }

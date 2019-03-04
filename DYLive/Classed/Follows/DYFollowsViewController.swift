@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DYFollowsViewController: UIViewController {
+class DYFollowsViewController: DYBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
