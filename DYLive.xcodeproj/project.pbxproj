@@ -43,6 +43,16 @@
 		EAA4298E222BE73F004D52EC /* gif_tabLive.gif in Resources */ = {isa = PBXBuildFile; fileRef = EAA4298D222BE73F004D52EC /* gif_tabLive.gif */; };
 		EAA42990222BE74A004D52EC /* gif_tabYuba.gif in Resources */ = {isa = PBXBuildFile; fileRef = EAA4298F222BE749004D52EC /* gif_tabYuba.gif */; };
 		EAA42992222BE754004D52EC /* gif_tabYule.gif in Resources */ = {isa = PBXBuildFile; fileRef = EAA42991222BE754004D52EC /* gif_tabYule.gif */; };
+		EAA8698B222D5979003D42E6 /* DYRecommendBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8698A222D5979003D42E6 /* DYRecommendBaseModel.swift */; };
+		EAA8698D222D59E1003D42E6 /* DYRecommendBeautyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8698C222D59E1003D42E6 /* DYRecommendBeautyModel.swift */; };
+		EAA86990222D5D12003D42E6 /* DYRecommendBeautyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8698E222D5D12003D42E6 /* DYRecommendBeautyCell.swift */; };
+		EAA86991222D5D12003D42E6 /* DYRecommendBeautyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA8698F222D5D12003D42E6 /* DYRecommendBeautyCell.xib */; };
+		EAA8699C222E4079003D42E6 /* DYLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8699A222E4079003D42E6 /* DYLoginViewController.swift */; };
+		EAA8699D222E4079003D42E6 /* DYLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA8699B222E4079003D42E6 /* DYLoginViewController.xib */; };
+		EAA869A0222E4701003D42E6 /* DYLoginTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA8699E222E4701003D42E6 /* DYLoginTableViewCell.swift */; };
+		EAA869A1222E4701003D42E6 /* DYLoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA8699F222E4701003D42E6 /* DYLoginTableViewCell.xib */; };
+		EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */; };
+		EAA869A5222E5533003D42E6 /* DYLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +100,16 @@
 		EAA4298D222BE73F004D52EC /* gif_tabLive.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_tabLive.gif; sourceTree = "<group>"; };
 		EAA4298F222BE749004D52EC /* gif_tabYuba.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_tabYuba.gif; sourceTree = "<group>"; };
 		EAA42991222BE754004D52EC /* gif_tabYule.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_tabYule.gif; sourceTree = "<group>"; };
+		EAA8698A222D5979003D42E6 /* DYRecommendBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendBaseModel.swift; sourceTree = "<group>"; };
+		EAA8698C222D59E1003D42E6 /* DYRecommendBeautyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendBeautyModel.swift; sourceTree = "<group>"; };
+		EAA8698E222D5D12003D42E6 /* DYRecommendBeautyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendBeautyCell.swift; sourceTree = "<group>"; };
+		EAA8698F222D5D12003D42E6 /* DYRecommendBeautyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYRecommendBeautyCell.xib; sourceTree = "<group>"; };
+		EAA8699A222E4079003D42E6 /* DYLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLoginViewController.swift; sourceTree = "<group>"; };
+		EAA8699B222E4079003D42E6 /* DYLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYLoginViewController.xib; sourceTree = "<group>"; };
+		EAA8699E222E4701003D42E6 /* DYLoginTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLoginTableViewCell.swift; sourceTree = "<group>"; };
+		EAA8699F222E4701003D42E6 /* DYLoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYLoginTableViewCell.xib; sourceTree = "<group>"; };
+		EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLoginHeaderView.swift; sourceTree = "<group>"; };
+		EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYLoginHeaderView.xib; sourceTree = "<group>"; };
 		F0729B358762481A397E1E71 /* Pods_DYLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -129,6 +149,8 @@
 				EA05CAE4222AA05F00EF1CB6 /* DYRecommendNormalCell.swift */,
 				EA05CAED222AD32000EF1CB6 /* DYRecommendHeaderView.swift */,
 				EA05CAEE222AD32000EF1CB6 /* DYRecommendHeaderView.xib */,
+				EAA8698E222D5D12003D42E6 /* DYRecommendBeautyCell.swift */,
+				EAA8698F222D5D12003D42E6 /* DYRecommendBeautyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				EA05CAE9222AB60600EF1CB6 /* DYRecommendNormal.swift */,
+				EAA8698A222D5979003D42E6 /* DYRecommendBaseModel.swift */,
+				EAA8698C222D59E1003D42E6 /* DYRecommendBeautyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -250,6 +274,12 @@
 				EA21BCB02229578A001DBD61 /* DYPageTitleContentView.swift */,
 				EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */,
 				EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */,
+				EAA8699A222E4079003D42E6 /* DYLoginViewController.swift */,
+				EAA8699B222E4079003D42E6 /* DYLoginViewController.xib */,
+				EAA8699E222E4701003D42E6 /* DYLoginTableViewCell.swift */,
+				EAA8699F222E4701003D42E6 /* DYLoginTableViewCell.xib */,
+				EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */,
+				EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -348,14 +378,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAA42992222BE754004D52EC /* gif_tabYule.gif in Resources */,
+				EAA869A5222E5533003D42E6 /* DYLoginHeaderView.xib in Resources */,
 				EAA42990222BE74A004D52EC /* gif_tabYuba.gif in Resources */,
 				EAA4298E222BE73F004D52EC /* gif_tabLive.gif in Resources */,
 				EAA4298C222BE722004D52EC /* gif_tabDiscovery.gif in Resources */,
+				EAA869A1222E4701003D42E6 /* DYLoginTableViewCell.xib in Resources */,
 				EAA42989222BE258004D52EC /* gif_tabFocus.gif in Resources */,
 				EA05CAE3222A9D2B00EF1CB6 /* DYRecommendNormalCell.xib in Resources */,
 				EA4411072227BF17003155EC /* LaunchScreen.storyboard in Resources */,
+				EAA86991222D5D12003D42E6 /* DYRecommendBeautyCell.xib in Resources */,
 				EA21BCB422295DFE001DBD61 /* yuba.plist in Resources */,
 				EA4411042227BF17003155EC /* Assets.xcassets in Resources */,
+				EAA8699D222E4079003D42E6 /* DYLoginViewController.xib in Resources */,
 				EA4411022227BF17003155EC /* Main.storyboard in Resources */,
 				EA05CAF0222AD32000EF1CB6 /* DYRecommendHeaderView.xib in Resources */,
 			);
@@ -429,12 +463,17 @@
 				EA4A4BA12227F4910030B8DF /* DYTabBar.swift in Sources */,
 				EA4A4BA5222805E80030B8DF /* Common.swift in Sources */,
 				EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */,
+				EAA8698B222D5979003D42E6 /* DYRecommendBaseModel.swift in Sources */,
 				EA4A4B9C2227E73F0030B8DF /* DYNavigationController.swift in Sources */,
 				EA21BCB12229578A001DBD61 /* DYPageTitleContentView.swift in Sources */,
 				EA4A4B962227E6370030B8DF /* DYFollowsViewController.swift in Sources */,
+				EAA8698D222D59E1003D42E6 /* DYRecommendBeautyModel.swift in Sources */,
 				EA05CADB222A961000EF1CB6 /* DYClassify.swift in Sources */,
 				EA05CAEF222AD32000EF1CB6 /* DYRecommendHeaderView.swift in Sources */,
+				EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */,
 				EA4410FF2227BF17003155EC /* ViewController.swift in Sources */,
+				EAA869A0222E4701003D42E6 /* DYLoginTableViewCell.swift in Sources */,
+				EAA8699C222E4079003D42E6 /* DYLoginViewController.swift in Sources */,
 				EA4A4B9A2227E67F0030B8DF /* DYDiscoverViewController.swift in Sources */,
 				EA05CADD222A972D00EF1CB6 /* DYRecommendBaseController.swift in Sources */,
 				EA05CAE5222AA05F00EF1CB6 /* DYRecommendNormalCell.swift in Sources */,
@@ -444,6 +483,7 @@
 				EA4410FD2227BF17003155EC /* AppDelegate.swift in Sources */,
 				EA4A4B902227E57E0030B8DF /* DYRecommendViewController.swift in Sources */,
 				EA4A4B942227E6160030B8DF /* DYEntertainmentViewController.swift in Sources */,
+				EAA86990222D5D12003D42E6 /* DYRecommendBeautyCell.swift in Sources */,
 				EA21BCAF2228D5D2001DBD61 /* DYPageTitleView.swift in Sources */,
 				EA4A4B982227E6590030B8DF /* DYBarViewController.swift in Sources */,
 				EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */,

@@ -30,7 +30,7 @@ class DYRecommendViewController: DYBaseViewController {
             vc.view.backgroundColor = UIColor.random_color()
             childVc.append(vc)
         }
-        let contentView = DYPageTitleContentView(frame:CGRect.make(0, KNavigationHeight + KStatusBarHeight, KScreenWidth, KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight),childVc:childVc, parentVc:self)
+        let contentView = DYPageTitleContentView(frame:CGRect.make(0, KNavigationHeight + 44, KScreenWidth, KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight),childVc:childVc, parentVc:self)
         return contentView
     }()
     
@@ -51,7 +51,7 @@ class DYRecommendViewController: DYBaseViewController {
         
 //        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DYRecommendNotification"), object: contentOffsetY)
         
-        print("\(pageTitle.frame)")
+        print("pageTitle -> \(pageTitle.frame) pageContent -> \(pageContent.frame)")
         NotificationCenter.default.addObserver(self, selector: #selector(xxx), name:NSNotification.Name(rawValue: KRecommendContentScrollNotification) , object:nil)
     }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DYBaseViewController: UIViewController {
+class DYBaseViewController: UIViewController,DYNavigationBarDelegate{
     // 自定义导航栏
     lazy var dyNavBar = { () -> DYNavigationBar in
         let navBar = DYNavigationBar()
@@ -20,9 +20,21 @@ class DYBaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(dyNavBar)
+        dyNavBar.delegate = self
         view.backgroundColor = UIColor.orange
         
         
+    }
+}
+
+extension DYBaseViewController{
+    func navigationBarItemDidSelect(bar: DYNavigationBar, item: UIImageView, type: DYNavigationBarItemType) {
+        if type == .login {
+            let login = DYLoginViewController()
+            self.navigationController?.pushViewController(login, animated: true)
+        }else if type == .history{
+            
+        }
     }
 }
 

@@ -57,7 +57,7 @@ class DYPageTitleContentView: UIView,UICollectionViewDelegate {
         collectionView.snp.makeConstraints { (make) in
             make.top.left.bottom.right.equalToSuperview()
         }
-        print("DYPageTitleContentView ---> layoutSubviews \(collectionView.frame.size.height)")
+        print("DYPageTitleContentView ---> layoutSubviews \(self.bounds)")
         
     }
 }

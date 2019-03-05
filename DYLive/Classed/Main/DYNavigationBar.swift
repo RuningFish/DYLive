@@ -8,10 +8,20 @@
 
 import UIKit
 import SnapKit
+
+enum  DYNavigationBarItemType: Int{
+    case login = 0
+    case history = 1
+}
+protocol DYNavigationBarDelegate {
+    func navigationBarItemDidSelect(bar:DYNavigationBar,item:UIImageView,type:DYNavigationBarItemType)
+}
+
 class DYNavigationBar: UIView {
     
     // 是否登陆
     var isLogin :Bool = false
+    var delegate:DYNavigationBarDelegate?
     override init(frame: CGRect) {
         super.init(frame: frame)
         setSubviews()
@@ -33,7 +43,7 @@ class DYNavigationBar: UIView {
         
         loginImageView.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(0)
-            make.width.height.equalTo(35)
+            make.width.height.equalTo(26)
             make.centerY.equalToSuperview().offset(0)
         }
         
@@ -83,20 +93,27 @@ class DYNavigationBar: UIView {
         contentView.addSubview(historyView)
         contentView.addSubview(messageView)
         
-        loginImageView.backgroundColor = UIColor.random_color()
-        searchView.backgroundColor = UIColor.random_color()
-        historyView.backgroundColor = UIColor.random_color()
+        loginImageView.backgroundColor = UIColor.colorWithRGB(r: 255,g: 141,b: 57)
+        searchView.backgroundColor = UIColor.colorWithRGB(r: 255,g: 141,b: 57)
+//        historyView.backgroundColor = UIColor.random_color()
         messageView.backgroundColor = UIColor.blue
     }
     
-    @objc func imageViewClick(){
-//        print("imageViewClick")
-        isLogin = !isLogin
-        messageView.isHidden = !isLogin//contentView.addSubview(messageView):messageView.removeFromSuperview()
-        print("\(imageViewClick) +\(isLogin)")
-        layoutSubviews()
-//        self.layoutIfNeeded()
+    @objc func imageViewClick(tap:UITapGestureRecognizer){
+//        isLogin = !isLogin
+//        messageView.isHidden = !isLogin
+//        print("\(imageViewClick) +\(isLogin)")
+//        layoutSubviews()
+        
+        guard let login = tap.view as? UIImageView else {return}
+        delegate?.navigationBarItemDidSelect(bar: self, item: login, type: .login)
     }
+    
+    @objc func historyViewClick(tap:UITapGestureRecognizer){
+        guard let history = tap.view as? UIImageView else {return}
+        delegate?.navigationBarItemDidSelect(bar: self, item: history, type: .history)
+    }
+    
     // lazy:懒加载
     lazy var contentView = { () -> UIView in
         var contentView = UIView()
@@ -107,6 +124,10 @@ class DYNavigationBar: UIView {
     // login - icon
     lazy var loginImageView = { () -> UIImageView in
         var imageView = UIImageView()
+        imageView.image = UIImage(named:"tf_login_username")
+        imageView.contentMode = .center
+        imageView.layer.cornerRadius = 13
+        imageView.layer.masksToBounds = true
         imageView.isUserInteractionEnabled = true
         let tap = UITapGestureRecognizer(target:self, action:#selector(imageViewClick))
         imageView.addGestureRecognizer(tap)
@@ -124,6 +145,10 @@ class DYNavigationBar: UIView {
     // history
     lazy var historyView = { () -> UIImageView in
         var historyView = UIImageView()
+        historyView.image = UIImage(named:"image_my_history")
+        historyView.isUserInteractionEnabled = true
+        let tap = UITapGestureRecognizer(target:self, action:#selector(historyViewClick))
+        historyView.addGestureRecognizer(tap)
         return historyView
         
     }()

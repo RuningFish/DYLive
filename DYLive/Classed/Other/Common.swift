@@ -26,6 +26,8 @@ let KBottomSafeAreaHeight : CGFloat = (KTabBarHeight - 49)
 // 推荐页推荐条高度
 let KPageTitleHeight : CGFloat = 44
 
+
+let Helvetica_Bold :String = "Helvetica-Bold"
 /*******************************  Notification  ***************************************/
 // 推荐页内容滚动通知
 let KRecommendContentScrollNotification = "KRecommendContentScrollNotification"
@@ -59,6 +61,10 @@ extension NSDate{
 extension UIColor{
     static func random_color() -> UIColor {
         return UIColor(red: CGFloat(arc4random()%256)/255.0, green: CGFloat(arc4random()%256)/255.0, blue: CGFloat(arc4random()%256)/255.0, alpha: 1)
+    }
+    
+    static func colorWithRGB(r:Int,g:Int,b:Int) -> UIColor{
+        return UIColor(red: CGFloat(r)/255.0, green: CGFloat(g)/255.0, blue: CGFloat(b)/255.0, alpha: 1)
     }
     
 }
