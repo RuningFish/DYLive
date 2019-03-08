@@ -28,6 +28,8 @@ let KPageTitleHeight : CGFloat = 44
 
 
 let Helvetica_Bold :String = "Helvetica-Bold"
+// 鱼吧内容的左间距
+let KContentLeftMargin :CGFloat = 20.0
 /*******************************  Notification  ***************************************/
 // 推荐页内容滚动通知
 let KRecommendContentScrollNotification = "KRecommendContentScrollNotification"
@@ -81,5 +83,26 @@ extension NotificationCenter{
     
     class func xsyRemoveNotification(_ observer: Any, name:String, object: Any?) {
         NotificationCenter.default.removeObserver(observer, name: NSNotification.Name(rawValue: name), object: object)
+    }
+}
+
+
+extension String {
+    func xsy_widthForComment(fontSize: CGFloat, height: CGFloat = 15) -> CGFloat {
+        let font = UIFont.systemFont(ofSize: fontSize)
+        let rect = NSString(string: self).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: height), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        return ceil(rect.width)
+    }
+    
+    func xsy_heightForComment(fontSize: CGFloat, width: CGFloat) -> CGFloat {
+        let font = UIFont.systemFont(ofSize: fontSize)
+        let rect = NSString(string: self).boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        return ceil(rect.height)
+    }
+    
+    func xsy_heightForComment(fontSize: CGFloat, width: CGFloat, maxHeight: CGFloat) -> CGFloat {
+        let font = UIFont.systemFont(ofSize: fontSize)
+        let rect = NSString(string: self).boundingRect(with: CGSize(width: width, height: CGFloat(MAXFLOAT)), options: .usesLineFragmentOrigin, attributes: [NSAttributedStringKey.font: font], context: nil)
+        return ceil(rect.height)>maxHeight ? maxHeight : ceil(rect.height)
     }
 }

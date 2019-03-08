@@ -16,7 +16,7 @@ class DYTabBar: UITabBar {
     var myDelegate: DYTabBarDelegate?
     private var tabbarItems = [DYTabBarItem]()
     private var lastItem :DYTabBarItem?
-    private let tabTitles = ["推荐","娱乐","关注","鱼塘","发现"]
+    private let tabTitles = ["推荐","娱乐","关注","鱼吧","发现"]
     private let tabIcons  = ["tabLive","tabYule","tabFocus","tabYuba","tabDiscovery"]
     private let tabGifs = ["gif_tabLive.gif","gif_tabYule.gif","gif_tabFocus.gif","gif_tabYuba.gif","gif_tabDiscovery.gif"]
     override init(frame: CGRect) {

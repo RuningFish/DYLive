@@ -18,6 +18,9 @@
 		EA21BCAF2228D5D2001DBD61 /* DYPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21BCAE2228D5D2001DBD61 /* DYPageTitleView.swift */; };
 		EA21BCB12229578A001DBD61 /* DYPageTitleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21BCB02229578A001DBD61 /* DYPageTitleContentView.swift */; };
 		EA21BCB422295DFE001DBD61 /* yuba.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA21BCB322295DFE001DBD61 /* yuba.plist */; };
+		EA22D006222FEF32004FCA77 /* DYYuBaCommnetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22D005222FEF32004FCA77 /* DYYuBaCommnetsView.swift */; };
+		EA22D00A22300638004FCA77 /* DYImageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22D00922300638004FCA77 /* DYImageContainerView.swift */; };
+		EA22D00C22311D88004FCA77 /* DYBottomToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22D00B22311D88004FCA77 /* DYBottomToolView.swift */; };
 		EA4410FD2227BF17003155EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4410FC2227BF17003155EC /* AppDelegate.swift */; };
 		EA4410FF2227BF17003155EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4410FE2227BF17003155EC /* ViewController.swift */; };
 		EA4411022227BF17003155EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4411002227BF17003155EC /* Main.storyboard */; };
@@ -36,6 +39,8 @@
 		EA4A4BA7222823890030B8DF /* DYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA6222823890030B8DF /* DYNavigationBar.swift */; };
 		EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */; };
 		EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */; };
+		EA99254D222EBC41007B4549 /* DYYuBaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */; };
+		EA992550222EBCFB007B4549 /* DYYuBaTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99254F222EBCFB007B4549 /* DYYuBaTopView.swift */; };
 		EA9C2F47222A6DA200C5863D /* HttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F46222A6DA200C5863D /* HttpTool.swift */; };
 		EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9C2F48222A887900C5863D /* DYRecommend.swift */; };
 		EAA42989222BE258004D52EC /* gif_tabFocus.gif in Resources */ = {isa = PBXBuildFile; fileRef = EAA42988222BE257004D52EC /* gif_tabFocus.gif */; };
@@ -53,6 +58,9 @@
 		EAA869A1222E4701003D42E6 /* DYLoginTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA8699F222E4701003D42E6 /* DYLoginTableViewCell.xib */; };
 		EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */; };
 		EAA869A5222E5533003D42E6 /* DYLoginHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */; };
+		EAB55413222EDB2F003FA98A /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAB55412222EDB2F003FA98A /* data.plist */; };
+		EAB55415222F69AB003FA98A /* DYYubaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB55414222F69AB003FA98A /* DYYubaContentView.swift */; };
+		EAB55417222F76B4003FA98A /* DYYuBaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB55416222F76B3003FA98A /* DYYuBaModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,9 @@
 		EA21BCAE2228D5D2001DBD61 /* DYPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPageTitleView.swift; sourceTree = "<group>"; };
 		EA21BCB02229578A001DBD61 /* DYPageTitleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPageTitleContentView.swift; sourceTree = "<group>"; };
 		EA21BCB322295DFE001DBD61 /* yuba.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = yuba.plist; sourceTree = "<group>"; };
+		EA22D005222FEF32004FCA77 /* DYYuBaCommnetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaCommnetsView.swift; sourceTree = "<group>"; };
+		EA22D00922300638004FCA77 /* DYImageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYImageContainerView.swift; sourceTree = "<group>"; };
+		EA22D00B22311D88004FCA77 /* DYBottomToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBottomToolView.swift; sourceTree = "<group>"; };
 		EA4410F92227BF17003155EC /* DYLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4410FC2227BF17003155EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4410FE2227BF17003155EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +99,8 @@
 		EA4A4BA6222823890030B8DF /* DYNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYNavigationBar.swift; sourceTree = "<group>"; };
 		EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseViewController.swift; sourceTree = "<group>"; };
 		EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabBarItem.swift; sourceTree = "<group>"; };
+		EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaTableViewCell.swift; sourceTree = "<group>"; };
+		EA99254F222EBCFB007B4549 /* DYYuBaTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaTopView.swift; sourceTree = "<group>"; };
 		EA9C2F46222A6DA200C5863D /* HttpTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpTool.swift; sourceTree = "<group>"; };
 		EA9C2F48222A887900C5863D /* DYRecommend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommend.swift; sourceTree = "<group>"; };
 		EAA42983222BE1FD004D52EC /* gif_tabDiscovery.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif_tabDiscovery.gif; sourceTree = "<group>"; };
@@ -110,6 +123,9 @@
 		EAA8699F222E4701003D42E6 /* DYLoginTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYLoginTableViewCell.xib; sourceTree = "<group>"; };
 		EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYLoginHeaderView.swift; sourceTree = "<group>"; };
 		EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYLoginHeaderView.xib; sourceTree = "<group>"; };
+		EAB55412222EDB2F003FA98A /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
+		EAB55414222F69AB003FA98A /* DYYubaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYubaContentView.swift; sourceTree = "<group>"; };
+		EAB55416222F76B3003FA98A /* DYYuBaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaModel.swift; sourceTree = "<group>"; };
 		F0729B358762481A397E1E71 /* Pods_DYLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -173,9 +189,18 @@
 				EAA42986222BE1FD004D52EC /* gif_tabLive.gif */,
 				EAA42984222BE1FD004D52EC /* gif_tabYuba.gif */,
 				EAA42987222BE1FD004D52EC /* gif_tabYule.gif */,
+				EAB55412222EDB2F003FA98A /* data.plist */,
 				EA21BCB322295DFE001DBD61 /* yuba.plist */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		EA22D008223005DE004FCA77 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA22D00922300638004FCA77 /* DYImageContainerView.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		EA4410F02227BF17003155EC = {
@@ -218,6 +243,7 @@
 		EA4A4B822227E34E0030B8DF /* Classed */ = {
 			isa = PBXGroup;
 			children = (
+				EA22D008223005DE004FCA77 /* Base */,
 				EA21BCB222295DE8001DBD61 /* Source */,
 				EA4A4B852227E34E0030B8DF /* Entertainment */,
 				EA4A4B862227E34E0030B8DF /* Follows */,
@@ -242,6 +268,8 @@
 		EA4A4B842227E34E0030B8DF /* DyBar */ = {
 			isa = PBXGroup;
 			children = (
+				EA99254A222EBC12007B4549 /* Model */,
+				EA992549222EBC11007B4549 /* View */,
 				EA4A4B972227E6590030B8DF /* DYBarViewController.swift */,
 			);
 			path = DyBar;
@@ -314,6 +342,26 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		EA992549222EBC11007B4549 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */,
+				EA99254F222EBCFB007B4549 /* DYYuBaTopView.swift */,
+				EAB55414222F69AB003FA98A /* DYYubaContentView.swift */,
+				EA22D005222FEF32004FCA77 /* DYYuBaCommnetsView.swift */,
+				EA22D00B22311D88004FCA77 /* DYBottomToolView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA99254A222EBC12007B4549 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EAB55416222F76B3003FA98A /* DYYuBaModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,6 +430,7 @@
 				EAA42990222BE74A004D52EC /* gif_tabYuba.gif in Resources */,
 				EAA4298E222BE73F004D52EC /* gif_tabLive.gif in Resources */,
 				EAA4298C222BE722004D52EC /* gif_tabDiscovery.gif in Resources */,
+				EAB55413222EDB2F003FA98A /* data.plist in Resources */,
 				EAA869A1222E4701003D42E6 /* DYLoginTableViewCell.xib in Resources */,
 				EAA42989222BE258004D52EC /* gif_tabFocus.gif in Resources */,
 				EA05CAE3222A9D2B00EF1CB6 /* DYRecommendNormalCell.xib in Resources */,
@@ -462,20 +511,27 @@
 			files = (
 				EA4A4BA12227F4910030B8DF /* DYTabBar.swift in Sources */,
 				EA4A4BA5222805E80030B8DF /* Common.swift in Sources */,
+				EA22D006222FEF32004FCA77 /* DYYuBaCommnetsView.swift in Sources */,
 				EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */,
+				EA22D00C22311D88004FCA77 /* DYBottomToolView.swift in Sources */,
+				EA99254D222EBC41007B4549 /* DYYuBaTableViewCell.swift in Sources */,
 				EAA8698B222D5979003D42E6 /* DYRecommendBaseModel.swift in Sources */,
 				EA4A4B9C2227E73F0030B8DF /* DYNavigationController.swift in Sources */,
+				EA22D00A22300638004FCA77 /* DYImageContainerView.swift in Sources */,
 				EA21BCB12229578A001DBD61 /* DYPageTitleContentView.swift in Sources */,
 				EA4A4B962227E6370030B8DF /* DYFollowsViewController.swift in Sources */,
 				EAA8698D222D59E1003D42E6 /* DYRecommendBeautyModel.swift in Sources */,
 				EA05CADB222A961000EF1CB6 /* DYClassify.swift in Sources */,
+				EA992550222EBCFB007B4549 /* DYYuBaTopView.swift in Sources */,
 				EA05CAEF222AD32000EF1CB6 /* DYRecommendHeaderView.swift in Sources */,
 				EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */,
 				EA4410FF2227BF17003155EC /* ViewController.swift in Sources */,
+				EAB55415222F69AB003FA98A /* DYYubaContentView.swift in Sources */,
 				EAA869A0222E4701003D42E6 /* DYLoginTableViewCell.swift in Sources */,
 				EAA8699C222E4079003D42E6 /* DYLoginViewController.swift in Sources */,
 				EA4A4B9A2227E67F0030B8DF /* DYDiscoverViewController.swift in Sources */,
 				EA05CADD222A972D00EF1CB6 /* DYRecommendBaseController.swift in Sources */,
+				EAB55417222F76B4003FA98A /* DYYuBaModel.swift in Sources */,
 				EA05CAE5222AA05F00EF1CB6 /* DYRecommendNormalCell.swift in Sources */,
 				EA05CAEA222AB60600EF1CB6 /* DYRecommendNormal.swift in Sources */,
 				EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */,
