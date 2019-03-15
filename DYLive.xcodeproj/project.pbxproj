@@ -15,6 +15,7 @@
 		EA05CAEA222AB60600EF1CB6 /* DYRecommendNormal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05CAE9222AB60600EF1CB6 /* DYRecommendNormal.swift */; };
 		EA05CAEF222AD32000EF1CB6 /* DYRecommendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA05CAED222AD32000EF1CB6 /* DYRecommendHeaderView.swift */; };
 		EA05CAF0222AD32000EF1CB6 /* DYRecommendHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA05CAEE222AD32000EF1CB6 /* DYRecommendHeaderView.xib */; };
+		EA1AD57B223506920085F09A /* DYStartLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA1AD57A223506920085F09A /* DYStartLiveViewController.swift */; };
 		EA21BCAF2228D5D2001DBD61 /* DYPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21BCAE2228D5D2001DBD61 /* DYPageTitleView.swift */; };
 		EA21BCB12229578A001DBD61 /* DYPageTitleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA21BCB02229578A001DBD61 /* DYPageTitleContentView.swift */; };
 		EA21BCB422295DFE001DBD61 /* yuba.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA21BCB322295DFE001DBD61 /* yuba.plist */; };
@@ -61,6 +62,9 @@
 		EAB55413222EDB2F003FA98A /* data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAB55412222EDB2F003FA98A /* data.plist */; };
 		EAB55415222F69AB003FA98A /* DYYubaContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB55414222F69AB003FA98A /* DYYubaContentView.swift */; };
 		EAB55417222F76B4003FA98A /* DYYuBaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAB55416222F76B3003FA98A /* DYYuBaModel.swift */; };
+		EAD232872236A0430062099C /* DYShowLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD232862236A0430062099C /* DYShowLiveController.swift */; };
+		EAD232892236C12D0062099C /* DYImageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD232882236C12D0062099C /* DYImageTitleView.swift */; };
+		EAD2328B2236C1520062099C /* DYImageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD2328A2236C1520062099C /* DYImageTitleView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,7 @@
 		EA05CAE9222AB60600EF1CB6 /* DYRecommendNormal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendNormal.swift; sourceTree = "<group>"; };
 		EA05CAED222AD32000EF1CB6 /* DYRecommendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendHeaderView.swift; sourceTree = "<group>"; };
 		EA05CAEE222AD32000EF1CB6 /* DYRecommendHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYRecommendHeaderView.xib; sourceTree = "<group>"; };
+		EA1AD57A223506920085F09A /* DYStartLiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYStartLiveViewController.swift; sourceTree = "<group>"; };
 		EA21BCAE2228D5D2001DBD61 /* DYPageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPageTitleView.swift; sourceTree = "<group>"; };
 		EA21BCB02229578A001DBD61 /* DYPageTitleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPageTitleContentView.swift; sourceTree = "<group>"; };
 		EA21BCB322295DFE001DBD61 /* yuba.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = yuba.plist; sourceTree = "<group>"; };
@@ -126,6 +131,9 @@
 		EAB55412222EDB2F003FA98A /* data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = data.plist; sourceTree = "<group>"; };
 		EAB55414222F69AB003FA98A /* DYYubaContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYubaContentView.swift; sourceTree = "<group>"; };
 		EAB55416222F76B3003FA98A /* DYYuBaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaModel.swift; sourceTree = "<group>"; };
+		EAD232862236A0430062099C /* DYShowLiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYShowLiveController.swift; sourceTree = "<group>"; };
+		EAD232882236C12D0062099C /* DYImageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYImageTitleView.swift; sourceTree = "<group>"; };
+		EAD2328A2236C1520062099C /* DYImageTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYImageTitleView.xib; sourceTree = "<group>"; };
 		F0729B358762481A397E1E71 /* Pods_DYLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,6 +175,9 @@
 				EA05CAEE222AD32000EF1CB6 /* DYRecommendHeaderView.xib */,
 				EAA8698E222D5D12003D42E6 /* DYRecommendBeautyCell.swift */,
 				EAA8698F222D5D12003D42E6 /* DYRecommendBeautyCell.xib */,
+				EAD232862236A0430062099C /* DYShowLiveController.swift */,
+				EAD232882236C12D0062099C /* DYImageTitleView.swift */,
+				EAD2328A2236C1520062099C /* DYImageTitleView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 				EAA8699F222E4701003D42E6 /* DYLoginTableViewCell.xib */,
 				EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */,
 				EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */,
+				EA1AD57A223506920085F09A /* DYStartLiveViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -440,6 +452,7 @@
 				EA4411042227BF17003155EC /* Assets.xcassets in Resources */,
 				EAA8699D222E4079003D42E6 /* DYLoginViewController.xib in Resources */,
 				EA4411022227BF17003155EC /* Main.storyboard in Resources */,
+				EAD2328B2236C1520062099C /* DYImageTitleView.xib in Resources */,
 				EA05CAF0222AD32000EF1CB6 /* DYRecommendHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,12 +469,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-DYLive/Pods-DYLive-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LFLiveKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +526,7 @@
 			files = (
 				EA4A4BA12227F4910030B8DF /* DYTabBar.swift in Sources */,
 				EA4A4BA5222805E80030B8DF /* Common.swift in Sources */,
+				EA1AD57B223506920085F09A /* DYStartLiveViewController.swift in Sources */,
 				EA22D006222FEF32004FCA77 /* DYYuBaCommnetsView.swift in Sources */,
 				EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */,
 				EA22D00C22311D88004FCA77 /* DYBottomToolView.swift in Sources */,
@@ -523,6 +539,7 @@
 				EAA8698D222D59E1003D42E6 /* DYRecommendBeautyModel.swift in Sources */,
 				EA05CADB222A961000EF1CB6 /* DYClassify.swift in Sources */,
 				EA992550222EBCFB007B4549 /* DYYuBaTopView.swift in Sources */,
+				EAD232872236A0430062099C /* DYShowLiveController.swift in Sources */,
 				EA05CAEF222AD32000EF1CB6 /* DYRecommendHeaderView.swift in Sources */,
 				EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */,
 				EA4410FF2227BF17003155EC /* ViewController.swift in Sources */,
@@ -545,6 +562,7 @@
 				EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */,
 				EA4A4BA3222800BA0030B8DF /* Image.swift in Sources */,
 				EA4A4BA7222823890030B8DF /* DYNavigationBar.swift in Sources */,
+				EAD232892236C12D0062099C /* DYImageTitleView.swift in Sources */,
 				EA4A4B9E2227E9790030B8DF /* DYTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -684,14 +702,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EX77QP4LY;
 				INFOPLIST_FILE = DYLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoshayu.DYLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -701,14 +722,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EX77QP4LY;
 				INFOPLIST_FILE = DYLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoshayu.DYLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

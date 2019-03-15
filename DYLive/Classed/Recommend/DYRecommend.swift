@@ -30,7 +30,8 @@ class DYRecommend: DYRecommendBaseController {
         view.backgroundColor = UIColor.red
         baseViews.append(view)
 //        setupUI()
-        
+        view.addSubview(live_video_start)
+        addConstraints()
         loadData()
         
         collectionView.register(UINib(nibName: "DYRecommendNormalCell", bundle: nil), forCellWithReuseIdentifier: KNormalIdentifier)
@@ -38,33 +39,6 @@ class DYRecommend: DYRecommendBaseController {
         collectionView.register(UINib(nibName: "DYRecommendHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: KHeaderViewIdentifier)
         
     }
-    
-//    // lazy
-//    lazy var collectionView :UICollectionView = { [unowned self]  in
-//        
-//        let height = KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight
-//        let layout = UICollectionViewFlowLayout()
-//        let collectionView = UICollectionView(frame: self.view.bounds,collectionViewLayout: layout)
-//        layout.itemSize = CGSize(width:KNormalItemW,height:KNormalItemH)
-//        layout.headerReferenceSize = CGSize(width:KScreenWidth,height:50)
-//        layout.minimumLineSpacing = 0//KItemMargin
-//        layout.minimumInteritemSpacing = 0
-//        layout.scrollDirection = .vertical
-//        collectionView.showsHorizontalScrollIndicator = false
-//        collectionView.showsVerticalScrollIndicator = false
-//        collectionView.isPagingEnabled = false
-//        collectionView.bounces = false
-//        collectionView.dataSource = self
-//        collectionView.delegate = self
-//        collectionView.backgroundColor = UIColor.white
-////        collectionView.autoresizingMask = [.flexibleWidth,.flexibleHeight]
-//        collectionView.register(UINib(nibName: "DYRecommendNormalCell", bundle: nil), forCellWithReuseIdentifier: KNormalIdentifier)
-////        collectionView.register(UINib(nibName: "DYRecommendHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: KHeaderViewIdentifier)
-//        
-//        collectionView.register(UINib(nibName: "DYRecommendHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: KHeaderViewIdentifier)
-//        
-//        return collectionView
-//    }()
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -79,6 +53,13 @@ class DYRecommend: DYRecommendBaseController {
             make.top.left.bottom.right.equalToSuperview()
         }
     }
+    
+    lazy var live_video_start :UIButton = {
+        let view = UIButton()
+        view.setImage(UIImage(named:"btn_livevideo_start_home"), for:.normal)
+        view.addTarget(self, action: #selector(didClickStartLiveVideo(_:)), for: .touchUpInside)
+        return view
+    }()
     
     func loadData(){
         let url = "http:capi.douyucdn.cn/api/v1/getbigDataRoom"
@@ -123,10 +104,18 @@ class DYRecommend: DYRecommendBaseController {
 }
 
 extension DYRecommend{
-//     func setupUI(){
-//        view.addSubview(collectionView)
-//        
-//    }
+     func addConstraints(){
+        
+        live_video_start.snp.makeConstraints { (make) in
+            make.right.equalTo(-20)
+            make.bottom.equalTo(-30)
+            make.width.height.equalTo(70)
+        }
+    }
+    
+   @objc func didClickStartLiveVideo(_ button:UIButton){
+        self.present(DYShowLiveController(), animated: false, completion: nil)
+    }
 }
 
 extension DYRecommend {
@@ -164,6 +153,12 @@ extension DYRecommend {
         
         return headerView
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let startLive = DYStartLiveViewController()
+        startLive.view.backgroundColor = UIColor.white
+        self.navigationController?.pushViewController(startLive, animated: true)
+    }
 }
 
 extension DYRecommend :UICollectionViewDelegateFlowLayout{
@@ -197,18 +192,21 @@ extension DYRecommend :UICollectionViewDelegateFlowLayout{
 //        let contentOffsetY = scrollView.contentOffset.y
 //        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DYRecommendNotification"), object: contentOffsetY)
 //    }
-//    
-//    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-//        let pan = scrollView.panGestureRecognizer
-//        let velocity = pan.velocity(in: scrollView).y
-//        let direction :RecommendScrollDirection = (velocity < -15) ?.up:.down
-//        
-//        let height = KScreenHeight - KNavigationHeight - KPageTitleHeight - KTabBarHeight
-//        if  velocity < -15 {
-//            self.view.frame = CGRect.make(0, -22, KScreenWidth, 641)
-//        }else if velocity > 15{
-//            self.view.frame = CGRect.make(0, 0, KScreenWidth, 597)
-//        }
-//        NotificationCenter.xsyPostNotification(postName: KRecommendContentScrollNotification, object: direction)
-//    }
+//
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        UIView.animate(withDuration: 0.5, animations: {
+            self.live_video_start.isHidden = true
+        })
+    }
+    
+    override func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        super.scrollViewWillEndDragging(scrollView, withVelocity: velocity, targetContentOffset: targetContentOffset)
+        if !navgationBarHidden {
+            UIView.animate(withDuration: 0.5, animations: {
+                self.live_video_start.isHidden = false
+            })
+        }
+    }
 }

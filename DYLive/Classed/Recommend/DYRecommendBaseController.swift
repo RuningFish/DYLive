@@ -22,6 +22,7 @@ enum RecommendScrollDirection :String {
 class DYRecommendBaseController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
     
     var baseViews:[UIView] = [UIView]()
+    var navgationBarHidden :Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -109,11 +110,13 @@ extension DYRecommendBaseController :UIScrollViewDelegate{
         
         let height = KScreenHeight - KNavigationHeight - KTabBarHeight
         if  velocity < -15 {
+            navgationBarHidden = true
 //            for view in baseViews{
 //                view.frame = CGRect.make(0, -KPageTitleHeight/2, KScreenWidth, height)
 //            }
             baseView.frame = CGRect.make(0, -KPageTitleHeight/2, KScreenWidth, height)
         }else if velocity > 15{
+            navgationBarHidden = false
 //            for view in baseViews{
 //                view.frame = CGRect.make(0, 0, KScreenWidth, height - KPageTitleHeight)
 //            }

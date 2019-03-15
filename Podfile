@@ -9,4 +9,5 @@ target 'DYLive' do
   pod 'SnapKit', '~> 4.0.0'
   pod 'Alamofire', '~> 4.5.1'
   pod 'Kingfisher', '~> 4.0.1'
+  pod 'LFLiveKit'
 end
