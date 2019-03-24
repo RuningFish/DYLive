@@ -14,7 +14,7 @@ class DYBarViewController: DYBaseViewController,UITableViewDataSource,UITableVie
     private var data :[DYYuBaModel] = [DYYuBaModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("DYBarViewController")
         view.addSubview(tableView)
         loadData()
     }

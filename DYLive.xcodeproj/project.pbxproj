@@ -38,6 +38,11 @@
 		EA4A4BA3222800BA0030B8DF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA2222800BA0030B8DF /* Image.swift */; };
 		EA4A4BA5222805E80030B8DF /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA4222805E80030B8DF /* Common.swift */; };
 		EA4A4BA7222823890030B8DF /* DYNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4A4BA6222823890030B8DF /* DYNavigationBar.swift */; };
+		EA63AA4A223C999E00DF2927 /* DYPlayerBackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA49223C999E00DF2927 /* DYPlayerBackController.swift */; };
+		EA63AA4D223CCA4800DF2927 /* DYYuBaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA4C223CCA4800DF2927 /* DYYuBaViewModel.swift */; };
+		EA63AA5222464FA400DF2927 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA5022464FA400DF2927 /* XPathQuery.m */; };
+		EA63AA5322464FA400DF2927 /* MWResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA5122464FA400DF2927 /* MWResolver.swift */; };
+		EA63AA552246507300DF2927 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63AA542246507300DF2927 /* libxml2.tbd */; };
 		EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */; };
 		EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */; };
 		EA99254D222EBC41007B4549 /* DYYuBaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */; };
@@ -65,6 +70,17 @@
 		EAD232872236A0430062099C /* DYShowLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD232862236A0430062099C /* DYShowLiveController.swift */; };
 		EAD232892236C12D0062099C /* DYImageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD232882236C12D0062099C /* DYImageTitleView.swift */; };
 		EAD2328B2236C1520062099C /* DYImageTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAD2328A2236C1520062099C /* DYImageTitleView.xib */; };
+		EAF09442223BC9CC004F03DD /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09441223BC96B004F03DD /* IJKMediaFramework.framework */; };
+		EAF09444223BCABB004F03DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09443223BCABB004F03DD /* AudioToolbox.framework */; };
+		EAF09446223BCAC1004F03DD /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09445223BCAC1004F03DD /* VideoToolbox.framework */; };
+		EAF09448223BCAD3004F03DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09447223BCAD3004F03DD /* CoreGraphics.framework */; };
+		EAF0944A223BCAE0004F03DD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09449223BCAE0004F03DD /* CoreMedia.framework */; };
+		EAF0944C223BCAE6004F03DD /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0944B223BCAE6004F03DD /* CoreVideo.framework */; };
+		EAF0944E223BCAF8004F03DD /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0944D223BCAF8004F03DD /* MediaPlayer.framework */; };
+		EAF09450223BCB00004F03DD /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF0944F223BCB00004F03DD /* MobileCoreServices.framework */; };
+		EAF09452223BCB0C004F03DD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09451223BCB0C004F03DD /* OpenGLES.framework */; };
+		EAF09454223BCB23004F03DD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09453223BCB23004F03DD /* QuartzCore.framework */; };
+		EAF09456223BCB32004F03DD /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EAF09455223BCB32004F03DD /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,6 +118,13 @@
 		EA4A4BA2222800BA0030B8DF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		EA4A4BA4222805E80030B8DF /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		EA4A4BA6222823890030B8DF /* DYNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYNavigationBar.swift; sourceTree = "<group>"; };
+		EA63AA49223C999E00DF2927 /* DYPlayerBackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYPlayerBackController.swift; sourceTree = "<group>"; };
+		EA63AA4C223CCA4800DF2927 /* DYYuBaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaViewModel.swift; sourceTree = "<group>"; };
+		EA63AA4E22464FA300DF2927 /* DYLive-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DYLive-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA63AA4F22464FA400DF2927 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		EA63AA5022464FA400DF2927 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		EA63AA5122464FA400DF2927 /* MWResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWResolver.swift; sourceTree = "<group>"; };
+		EA63AA542246507300DF2927 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseViewController.swift; sourceTree = "<group>"; };
 		EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabBarItem.swift; sourceTree = "<group>"; };
 		EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaTableViewCell.swift; sourceTree = "<group>"; };
@@ -134,6 +157,17 @@
 		EAD232862236A0430062099C /* DYShowLiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYShowLiveController.swift; sourceTree = "<group>"; };
 		EAD232882236C12D0062099C /* DYImageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYImageTitleView.swift; sourceTree = "<group>"; };
 		EAD2328A2236C1520062099C /* DYImageTitleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYImageTitleView.xib; sourceTree = "<group>"; };
+		EAF09441223BC96B004F03DD /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IJKMediaFramework.framework; path = DYLive/IJKMediaFramework.framework; sourceTree = "<group>"; };
+		EAF09443223BCABB004F03DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EAF09445223BCAC1004F03DD /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EAF09447223BCAD3004F03DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAF09449223BCAE0004F03DD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EAF0944B223BCAE6004F03DD /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EAF0944D223BCAF8004F03DD /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EAF0944F223BCB00004F03DD /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		EAF09451223BCB0C004F03DD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		EAF09453223BCB23004F03DD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EAF09455223BCB32004F03DD /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F0729B358762481A397E1E71 /* Pods_DYLive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DYLive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,6 +176,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA63AA552246507300DF2927 /* libxml2.tbd in Frameworks */,
+				EAF09456223BCB32004F03DD /* libz.tbd in Frameworks */,
+				EAF09454223BCB23004F03DD /* QuartzCore.framework in Frameworks */,
+				EAF09452223BCB0C004F03DD /* OpenGLES.framework in Frameworks */,
+				EAF09450223BCB00004F03DD /* MobileCoreServices.framework in Frameworks */,
+				EAF0944E223BCAF8004F03DD /* MediaPlayer.framework in Frameworks */,
+				EAF0944C223BCAE6004F03DD /* CoreVideo.framework in Frameworks */,
+				EAF0944A223BCAE0004F03DD /* CoreMedia.framework in Frameworks */,
+				EAF09448223BCAD3004F03DD /* CoreGraphics.framework in Frameworks */,
+				EAF09446223BCAC1004F03DD /* VideoToolbox.framework in Frameworks */,
+				EAF09444223BCABB004F03DD /* AudioToolbox.framework in Frameworks */,
+				EAF09442223BC9CC004F03DD /* IJKMediaFramework.framework in Frameworks */,
 				A5A0A41FDE311F9E9DC33CE6 /* Pods_DYLive.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +198,18 @@
 		3FBE370BC6E1C2B31C67D11D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AA542246507300DF2927 /* libxml2.tbd */,
+				EAF09455223BCB32004F03DD /* libz.tbd */,
+				EAF09453223BCB23004F03DD /* QuartzCore.framework */,
+				EAF09451223BCB0C004F03DD /* OpenGLES.framework */,
+				EAF0944F223BCB00004F03DD /* MobileCoreServices.framework */,
+				EAF0944D223BCAF8004F03DD /* MediaPlayer.framework */,
+				EAF0944B223BCAE6004F03DD /* CoreVideo.framework */,
+				EAF09449223BCAE0004F03DD /* CoreMedia.framework */,
+				EAF09447223BCAD3004F03DD /* CoreGraphics.framework */,
+				EAF09445223BCAC1004F03DD /* VideoToolbox.framework */,
+				EAF09443223BCABB004F03DD /* AudioToolbox.framework */,
+				EAF09441223BC96B004F03DD /* IJKMediaFramework.framework */,
 				F0729B358762481A397E1E71 /* Pods_DYLive.framework */,
 			);
 			name = Frameworks;
@@ -195,6 +253,9 @@
 		EA21BCB222295DE8001DBD61 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AA5122464FA400DF2927 /* MWResolver.swift */,
+				EA63AA4F22464FA400DF2927 /* XPathQuery.h */,
+				EA63AA5022464FA400DF2927 /* XPathQuery.m */,
 				EAA42983222BE1FD004D52EC /* gif_tabDiscovery.gif */,
 				EAA42985222BE1FD004D52EC /* gif_tabFocus.gif */,
 				EAA42986222BE1FD004D52EC /* gif_tabLive.gif */,
@@ -202,6 +263,7 @@
 				EAA42987222BE1FD004D52EC /* gif_tabYule.gif */,
 				EAB55412222EDB2F003FA98A /* data.plist */,
 				EA21BCB322295DFE001DBD61 /* yuba.plist */,
+				EA63AA4E22464FA300DF2927 /* DYLive-Bridging-Header.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -279,6 +341,7 @@
 		EA4A4B842227E34E0030B8DF /* DyBar */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AA4B223CCA2B00DF2927 /* ViewModel */,
 				EA99254A222EBC12007B4549 /* Model */,
 				EA992549222EBC11007B4549 /* View */,
 				EA4A4B972227E6590030B8DF /* DYBarViewController.swift */,
@@ -305,6 +368,7 @@
 		EA4A4B872227E34E0030B8DF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AA48223C999E00DF2927 /* Player */,
 				EA4A4B9B2227E73F0030B8DF /* DYNavigationController.swift */,
 				EA4A4B9D2227E9790030B8DF /* DYTabBarViewController.swift */,
 				EA4A4BA02227F4910030B8DF /* DYTabBar.swift */,
@@ -354,6 +418,22 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		EA63AA48223C999E00DF2927 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AA49223C999E00DF2927 /* DYPlayerBackController.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		EA63AA4B223CCA2B00DF2927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AA4C223CCA4800DF2927 /* DYYuBaViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		EA992549222EBC11007B4549 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,7 +466,6 @@
 				EA4410F62227BF17003155EC /* Frameworks */,
 				EA4410F72227BF17003155EC /* Resources */,
 				817C4D75C36275D609D14CFD /* [CP] Embed Pods Frameworks */,
-				BF3A4B5225D73A08B5798817 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,6 +489,7 @@
 				TargetAttributes = {
 					EA4410F82227BF17003155EC = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -466,7 +546,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-DYLive/Pods-DYLive-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-DYLive/Pods-DYLive-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/LFLiveKit/LFLiveKit.framework",
@@ -481,7 +561,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYLive/Pods-DYLive-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DYLive/Pods-DYLive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A34BE5252AA6599ED1E0B307 /* [CP] Check Pods Manifest.lock */ = {
@@ -502,21 +582,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BF3A4B5225D73A08B5798817 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYLive/Pods-DYLive-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -529,6 +594,7 @@
 				EA1AD57B223506920085F09A /* DYStartLiveViewController.swift in Sources */,
 				EA22D006222FEF32004FCA77 /* DYYuBaCommnetsView.swift in Sources */,
 				EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */,
+				EA63AA5222464FA400DF2927 /* XPathQuery.m in Sources */,
 				EA22D00C22311D88004FCA77 /* DYBottomToolView.swift in Sources */,
 				EA99254D222EBC41007B4549 /* DYYuBaTableViewCell.swift in Sources */,
 				EAA8698B222D5979003D42E6 /* DYRecommendBaseModel.swift in Sources */,
@@ -544,6 +610,7 @@
 				EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */,
 				EA4410FF2227BF17003155EC /* ViewController.swift in Sources */,
 				EAB55415222F69AB003FA98A /* DYYubaContentView.swift in Sources */,
+				EA63AA5322464FA400DF2927 /* MWResolver.swift in Sources */,
 				EAA869A0222E4701003D42E6 /* DYLoginTableViewCell.swift in Sources */,
 				EAA8699C222E4079003D42E6 /* DYLoginViewController.swift in Sources */,
 				EA4A4B9A2227E67F0030B8DF /* DYDiscoverViewController.swift in Sources */,
@@ -552,9 +619,11 @@
 				EA05CAE5222AA05F00EF1CB6 /* DYRecommendNormalCell.swift in Sources */,
 				EA05CAEA222AB60600EF1CB6 /* DYRecommendNormal.swift in Sources */,
 				EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */,
+				EA63AA4A223C999E00DF2927 /* DYPlayerBackController.swift in Sources */,
 				EA9C2F47222A6DA200C5863D /* HttpTool.swift in Sources */,
 				EA4410FD2227BF17003155EC /* AppDelegate.swift in Sources */,
 				EA4A4B902227E57E0030B8DF /* DYRecommendViewController.swift in Sources */,
+				EA63AA4D223CCA4800DF2927 /* DYYuBaViewModel.swift in Sources */,
 				EA4A4B942227E6160030B8DF /* DYEntertainmentViewController.swift in Sources */,
 				EAA86990222D5D12003D42E6 /* DYRecommendBeautyCell.swift in Sources */,
 				EA21BCAF2228D5D2001DBD61 /* DYPageTitleView.swift in Sources */,
@@ -702,15 +771,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EX77QP4LY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYLive",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LFLiveKit/LFLiveKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"${SDK_ROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = DYLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -I$(SDKROOT)/usr/include/libxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoshayu.DYLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DYLive/Classed/Source/DYLive-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -722,15 +807,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5EX77QP4LY;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DYLive",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/LFLiveKit/LFLiveKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"${SDK_ROOT}/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = DYLive/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -I$(SDKROOT)/usr/include/libxml2";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoshayu.DYLive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "DYLive/Classed/Source/DYLive-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -746,7 +846,7 @@
 				EA44110A2227BF17003155EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EA44110B2227BF17003155EC /* Build configuration list for PBXNativeTarget "DYLive" */ = {
 			isa = XCConfigurationList;
@@ -755,7 +855,7 @@
 				EA44110D2227BF17003155EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -10,12 +10,19 @@ DEPENDENCIES:
   - LFLiveKit
   - SnapKit (~> 4.0.0)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Kingfisher
+    - LFLiveKit
+    - SnapKit
+
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Kingfisher: b771785e9461ed4b8686d40e7145f9e58100cb24
   LFLiveKit: 2219563721f8aa0f188effc3395a06e2d53b23f2
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 2e174edcebe08291009669171f372c5366a490de
+PODFILE CHECKSUM: 2892014d4ff0a69e0ab196ccc69aee1f9e29396d
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.1

@@ -55,8 +55,13 @@ extension DYTabBar{
             tabBarItem.tabBarIcon.image = UIImage(named:tabIcons[index])
             tabBarItem.tabBarIconHigh.image = UIImage(named:"\(tabIcons[index])\("HL")")
             tabBarItem.tabBarTitle.text = value
+            // 单击手势
             let tap = UITapGestureRecognizer.init(target: self, action: #selector(tabBarItemClick))
             tabBarItem.addGestureRecognizer(tap)
+            // 双击手势
+            let doubleTap = UITapGestureRecognizer.init(target: self, action: #selector(tabBarItemDoubleClick))
+            doubleTap.numberOfTapsRequired = 2
+            tabBarItem.addGestureRecognizer(doubleTap)
             self.addSubview(tabBarItem)
             self.tabbarItems.append(tabBarItem)
         }
@@ -94,5 +99,11 @@ extension DYTabBar{
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time, execute: {
             currentItem.stopAnimating()
         })
+    }
+    
+    @objc func tabBarItemDoubleClick(tap:UITapGestureRecognizer){
+        guard let currentItem = tap.view as? DYTabBarItem else {return}
+        let selectIndex = currentItem.tag
+        print("双击 ===== \(selectIndex)")
     }
 }

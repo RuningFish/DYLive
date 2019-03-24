@@ -10,4 +10,5 @@ target 'DYLive' do
   pod 'Alamofire', '~> 4.5.1'
   pod 'Kingfisher', '~> 4.0.1'
   pod 'LFLiveKit'
+#  pod 'Kanna', '~> 2.2.1'
 end

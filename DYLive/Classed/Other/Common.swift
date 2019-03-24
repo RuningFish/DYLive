@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import IJKMediaFramework
 
 // 屏幕的宽
 let KScreenWidth = UIScreen.main.bounds.size.width
@@ -36,6 +37,7 @@ let KContentLeftMargin :CGFloat = 20.0
 let KRecommendContentScrollNotification = "KRecommendContentScrollNotification"
 
 let KStream_url = "rtmp://192.168.99.176:1935/rtmplive/room"
+let KBaseURL = ""
 /*******************************  ------------  ***************************************/
 extension Bundle{
     var namespace : String {
