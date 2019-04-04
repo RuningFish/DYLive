@@ -22,6 +22,7 @@
 		EA22D006222FEF32004FCA77 /* DYYuBaCommnetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22D005222FEF32004FCA77 /* DYYuBaCommnetsView.swift */; };
 		EA22D00A22300638004FCA77 /* DYImageContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22D00922300638004FCA77 /* DYImageContainerView.swift */; };
 		EA22D00C22311D88004FCA77 /* DYBottomToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22D00B22311D88004FCA77 /* DYBottomToolView.swift */; };
+		EA43CCA12256013B009D3154 /* DYBaseTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA43CCA02256013B009D3154 /* DYBaseTool.swift */; };
 		EA4410FD2227BF17003155EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4410FC2227BF17003155EC /* AppDelegate.swift */; };
 		EA4410FF2227BF17003155EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4410FE2227BF17003155EC /* ViewController.swift */; };
 		EA4411022227BF17003155EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4411002227BF17003155EC /* Main.storyboard */; };
@@ -43,6 +44,35 @@
 		EA63AA5222464FA400DF2927 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA5022464FA400DF2927 /* XPathQuery.m */; };
 		EA63AA5322464FA400DF2927 /* MWResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA5122464FA400DF2927 /* MWResolver.swift */; };
 		EA63AA552246507300DF2927 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA63AA542246507300DF2927 /* libxml2.tbd */; };
+		EA63AA6F2247305200DF2927 /* DYPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA6E2247305200DF2927 /* DYPlayerView.swift */; };
+		EA63AA7122473E0E00DF2927 /* DYPlayerContainter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AA7022473E0E00DF2927 /* DYPlayerContainter.swift */; };
+		EA63AAA62253600700DF2927 /* DYTabCateListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAA52253600700DF2927 /* DYTabCateListModel.swift */; };
+		EA63AAA92253625C00DF2927 /* DYRecommendCateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAA82253625C00DF2927 /* DYRecommendCateListViewModel.swift */; };
+		EA63AAAB2253782600DF2927 /* follows.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAAA2253782600DF2927 /* follows.plist */; };
+		EA63AAB022537AD000DF2927 /* DYFollowsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAAF22537AD000DF2927 /* DYFollowsViewModel.swift */; };
+		EA63AAB2225380ED00DF2927 /* DYFollowsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAB1225380ED00DF2927 /* DYFollowsModel.swift */; };
+		EA63AAB722538E0200DF2927 /* DYEntertainmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAB622538E0200DF2927 /* DYEntertainmentModel.swift */; };
+		EA63AAB922538E1400DF2927 /* DYDYEntertainmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAB822538E1400DF2927 /* DYDYEntertainmentViewModel.swift */; };
+		EA63AABB22544D2E00DF2927 /* DYFollowsVideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AABA22544D2E00DF2927 /* DYFollowsVideoModel.swift */; };
+		EA63AABD2254533300DF2927 /* DYFollowsVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AABC2254533300DF2927 /* DYFollowsVideoCell.swift */; };
+		EA63AABF225465C500DF2927 /* FollowsVideoUp.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AABE225465C500DF2927 /* FollowsVideoUp.plist */; };
+		EA63AAC122546B4300DF2927 /* FollowsVideoList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAC022546B4300DF2927 /* FollowsVideoList.plist */; };
+		EA63AAC52254702C00DF2927 /* DYFollowsVideoListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAC42254702C00DF2927 /* DYFollowsVideoListHeader.swift */; };
+		EA63AACB22547BAB00DF2927 /* DYFollowsVideoHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AACA22547BAB00DF2927 /* DYFollowsVideoHeaderModel.swift */; };
+		EA63AACD2254902100DF2927 /* DYFollowsHeaderUPCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AACC2254902100DF2927 /* DYFollowsHeaderUPCell.swift */; };
+		EA63AACF22549FF300DF2927 /* Entertainment.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AACE22549FF300DF2927 /* Entertainment.plist */; };
+		EA63AAD42254A9AA00DF2927 /* DYDiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAD32254A9AA00DF2927 /* DYDiscoverViewModel.swift */; };
+		EA63AAD62254ABA900DF2927 /* DYBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAD52254ABA900DF2927 /* DYBaseModel.swift */; };
+		EA63AADA2254BF0800DF2927 /* DYAnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAD92254BF0800DF2927 /* DYAnchorGroup.swift */; };
+		EA63AADC2254C38100DF2927 /* DYBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AADB2254C38100DF2927 /* DYBaseViewModel.swift */; };
+		EA63AADE2254D2F200DF2927 /* DYDiscoverActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AADD2254D2F200DF2927 /* DYDiscoverActivityCell.swift */; };
+		EA63AAE02254E67C00DF2927 /* DiscoverYuyin.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AADF2254E67C00DF2927 /* DiscoverYuyin.plist */; };
+		EA63AAE22254E68E00DF2927 /* DiscoverVideo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAE12254E68E00DF2927 /* DiscoverVideo.plist */; };
+		EA63AAE42254E6A200DF2927 /* DiscoverActivity.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAE32254E6A200DF2927 /* DiscoverActivity.plist */; };
+		EA63AAE62254ED8200DF2927 /* DYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA63AAE52254ED8200DF2927 /* DYWebViewController.swift */; };
+		EA63AAE8225517DB00DF2927 /* LiveEntry.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAE7225517DB00DF2927 /* LiveEntry.plist */; };
+		EA63AAEA22551AB500DF2927 /* LevelIcon.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAE922551AB500DF2927 /* LevelIcon.plist */; };
+		EA63AAEC22551F4D00DF2927 /* HomeCustom.plist in Resources */ = {isa = PBXBuildFile; fileRef = EA63AAEB22551F4D00DF2927 /* HomeCustom.plist */; };
 		EA7A4CA7222D0406006B56FB /* DYBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */; };
 		EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */; };
 		EA99254D222EBC41007B4549 /* DYYuBaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */; };
@@ -100,6 +130,7 @@
 		EA22D005222FEF32004FCA77 /* DYYuBaCommnetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaCommnetsView.swift; sourceTree = "<group>"; };
 		EA22D00922300638004FCA77 /* DYImageContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYImageContainerView.swift; sourceTree = "<group>"; };
 		EA22D00B22311D88004FCA77 /* DYBottomToolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBottomToolView.swift; sourceTree = "<group>"; };
+		EA43CCA02256013B009D3154 /* DYBaseTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseTool.swift; sourceTree = "<group>"; };
 		EA4410F92227BF17003155EC /* DYLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4410FC2227BF17003155EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA4410FE2227BF17003155EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +156,35 @@
 		EA63AA5022464FA400DF2927 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
 		EA63AA5122464FA400DF2927 /* MWResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWResolver.swift; sourceTree = "<group>"; };
 		EA63AA542246507300DF2927 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		EA63AA6E2247305200DF2927 /* DYPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPlayerView.swift; sourceTree = "<group>"; };
+		EA63AA7022473E0E00DF2927 /* DYPlayerContainter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYPlayerContainter.swift; sourceTree = "<group>"; };
+		EA63AAA52253600700DF2927 /* DYTabCateListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabCateListModel.swift; sourceTree = "<group>"; };
+		EA63AAA82253625C00DF2927 /* DYRecommendCateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYRecommendCateListViewModel.swift; sourceTree = "<group>"; };
+		EA63AAAA2253782600DF2927 /* follows.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = follows.plist; sourceTree = "<group>"; };
+		EA63AAAF22537AD000DF2927 /* DYFollowsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsViewModel.swift; sourceTree = "<group>"; };
+		EA63AAB1225380ED00DF2927 /* DYFollowsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsModel.swift; sourceTree = "<group>"; };
+		EA63AAB622538E0200DF2927 /* DYEntertainmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYEntertainmentModel.swift; sourceTree = "<group>"; };
+		EA63AAB822538E1400DF2927 /* DYDYEntertainmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYDYEntertainmentViewModel.swift; sourceTree = "<group>"; };
+		EA63AABA22544D2E00DF2927 /* DYFollowsVideoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsVideoModel.swift; sourceTree = "<group>"; };
+		EA63AABC2254533300DF2927 /* DYFollowsVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsVideoCell.swift; sourceTree = "<group>"; };
+		EA63AABE225465C500DF2927 /* FollowsVideoUp.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FollowsVideoUp.plist; sourceTree = "<group>"; };
+		EA63AAC022546B4300DF2927 /* FollowsVideoList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = FollowsVideoList.plist; sourceTree = "<group>"; };
+		EA63AAC42254702C00DF2927 /* DYFollowsVideoListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsVideoListHeader.swift; sourceTree = "<group>"; };
+		EA63AACA22547BAB00DF2927 /* DYFollowsVideoHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsVideoHeaderModel.swift; sourceTree = "<group>"; };
+		EA63AACC2254902100DF2927 /* DYFollowsHeaderUPCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYFollowsHeaderUPCell.swift; sourceTree = "<group>"; };
+		EA63AACE22549FF300DF2927 /* Entertainment.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Entertainment.plist; sourceTree = "<group>"; };
+		EA63AAD32254A9AA00DF2927 /* DYDiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYDiscoverViewModel.swift; sourceTree = "<group>"; };
+		EA63AAD52254ABA900DF2927 /* DYBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseModel.swift; sourceTree = "<group>"; };
+		EA63AAD92254BF0800DF2927 /* DYAnchorGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYAnchorGroup.swift; sourceTree = "<group>"; };
+		EA63AADB2254C38100DF2927 /* DYBaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseViewModel.swift; sourceTree = "<group>"; };
+		EA63AADD2254D2F200DF2927 /* DYDiscoverActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYDiscoverActivityCell.swift; sourceTree = "<group>"; };
+		EA63AADF2254E67C00DF2927 /* DiscoverYuyin.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DiscoverYuyin.plist; sourceTree = "<group>"; };
+		EA63AAE12254E68E00DF2927 /* DiscoverVideo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DiscoverVideo.plist; sourceTree = "<group>"; };
+		EA63AAE32254E6A200DF2927 /* DiscoverActivity.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DiscoverActivity.plist; sourceTree = "<group>"; };
+		EA63AAE52254ED8200DF2927 /* DYWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYWebViewController.swift; sourceTree = "<group>"; };
+		EA63AAE7225517DB00DF2927 /* LiveEntry.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LiveEntry.plist; sourceTree = "<group>"; };
+		EA63AAE922551AB500DF2927 /* LevelIcon.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = LevelIcon.plist; sourceTree = "<group>"; };
+		EA63AAEB22551F4D00DF2927 /* HomeCustom.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = HomeCustom.plist; sourceTree = "<group>"; };
 		EA7A4CA6222D0406006B56FB /* DYBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYBaseViewController.swift; sourceTree = "<group>"; };
 		EA94A2C3222B7C4B0019EC97 /* DYTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYTabBarItem.swift; sourceTree = "<group>"; };
 		EA99254B222EBC41007B4549 /* DYYuBaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DYYuBaTableViewCell.swift; sourceTree = "<group>"; };
@@ -246,6 +306,7 @@
 				EA05CAE9222AB60600EF1CB6 /* DYRecommendNormal.swift */,
 				EAA8698A222D5979003D42E6 /* DYRecommendBaseModel.swift */,
 				EAA8698C222D59E1003D42E6 /* DYRecommendBeautyModel.swift */,
+				EA63AAA52253600700DF2927 /* DYTabCateListModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +325,16 @@
 				EAB55412222EDB2F003FA98A /* data.plist */,
 				EA21BCB322295DFE001DBD61 /* yuba.plist */,
 				EA63AA4E22464FA300DF2927 /* DYLive-Bridging-Header.h */,
+				EA63AAAA2253782600DF2927 /* follows.plist */,
+				EA63AABE225465C500DF2927 /* FollowsVideoUp.plist */,
+				EA63AAC022546B4300DF2927 /* FollowsVideoList.plist */,
+				EA63AACE22549FF300DF2927 /* Entertainment.plist */,
+				EA63AADF2254E67C00DF2927 /* DiscoverYuyin.plist */,
+				EA63AAE12254E68E00DF2927 /* DiscoverVideo.plist */,
+				EA63AAE32254E6A200DF2927 /* DiscoverActivity.plist */,
+				EA63AAE7225517DB00DF2927 /* LiveEntry.plist */,
+				EA63AAE922551AB500DF2927 /* LevelIcon.plist */,
+				EA63AAEB22551F4D00DF2927 /* HomeCustom.plist */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -333,6 +404,9 @@
 		EA4A4B832227E34E0030B8DF /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AAD22254A98000DF2927 /* Model */,
+				EA63AAD12254A98000DF2927 /* View */,
+				EA63AAD02254A97F00DF2927 /* ViewModel */,
 				EA4A4B992227E67F0030B8DF /* DYDiscoverViewController.swift */,
 			);
 			path = Discover;
@@ -352,6 +426,9 @@
 		EA4A4B852227E34E0030B8DF /* Entertainment */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AAB322538DE500DF2927 /* Model */,
+				EA63AAB422538DE500DF2927 /* View */,
+				EA63AAB522538DE500DF2927 /* ViewModel */,
 				EA4A4B932227E6160030B8DF /* DYEntertainmentViewController.swift */,
 			);
 			path = Entertainment;
@@ -360,6 +437,9 @@
 		EA4A4B862227E34E0030B8DF /* Follows */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AAAE225379DB00DF2927 /* Model */,
+				EA63AAAC225379DB00DF2927 /* View */,
+				EA63AAAD225379DB00DF2927 /* ViewModel */,
 				EA4A4B952227E6370030B8DF /* DYFollowsViewController.swift */,
 			);
 			path = Follows;
@@ -384,6 +464,7 @@
 				EAA869A2222E5528003D42E6 /* DYLoginHeaderView.swift */,
 				EAA869A4222E5533003D42E6 /* DYLoginHeaderView.xib */,
 				EA1AD57A223506920085F09A /* DYStartLiveViewController.swift */,
+				EA63AAE52254ED8200DF2927 /* DYWebViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -400,6 +481,7 @@
 		EA4A4B892227E34E0030B8DF /* Recommend */ = {
 			isa = PBXGroup;
 			children = (
+				EA63AAA72253622400DF2927 /* ViewModel */,
 				EA05CAE8222AB5E200EF1CB6 /* Model */,
 				EA05CAE0222A9CEE00EF1CB6 /* View */,
 				EA4A4B8F2227E57E0030B8DF /* DYRecommendViewController.swift */,
@@ -414,6 +496,7 @@
 			isa = PBXGroup;
 			children = (
 				EA9C2F46222A6DA200C5863D /* HttpTool.swift */,
+				EA43CCA02256013B009D3154 /* DYBaseTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -422,6 +505,8 @@
 			isa = PBXGroup;
 			children = (
 				EA63AA49223C999E00DF2927 /* DYPlayerBackController.swift */,
+				EA63AA6E2247305200DF2927 /* DYPlayerView.swift */,
+				EA63AA7022473E0E00DF2927 /* DYPlayerContainter.swift */,
 			);
 			path = Player;
 			sourceTree = "<group>";
@@ -432,6 +517,91 @@
 				EA63AA4C223CCA4800DF2927 /* DYYuBaViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA63AAA72253622400DF2927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAA82253625C00DF2927 /* DYRecommendCateListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA63AAAC225379DB00DF2927 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AABC2254533300DF2927 /* DYFollowsVideoCell.swift */,
+				EA63AAC42254702C00DF2927 /* DYFollowsVideoListHeader.swift */,
+				EA63AACC2254902100DF2927 /* DYFollowsHeaderUPCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA63AAAD225379DB00DF2927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAAF22537AD000DF2927 /* DYFollowsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA63AAAE225379DB00DF2927 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAB1225380ED00DF2927 /* DYFollowsModel.swift */,
+				EA63AABA22544D2E00DF2927 /* DYFollowsVideoModel.swift */,
+				EA63AACA22547BAB00DF2927 /* DYFollowsVideoHeaderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA63AAB322538DE500DF2927 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAB622538E0200DF2927 /* DYEntertainmentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA63AAB422538DE500DF2927 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA63AAB522538DE500DF2927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAB822538E1400DF2927 /* DYDYEntertainmentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA63AAD02254A97F00DF2927 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAD32254A9AA00DF2927 /* DYDiscoverViewModel.swift */,
+				EA63AADB2254C38100DF2927 /* DYBaseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA63AAD12254A98000DF2927 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AADD2254D2F200DF2927 /* DYDiscoverActivityCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA63AAD22254A98000DF2927 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA63AAD52254ABA900DF2927 /* DYBaseModel.swift */,
+				EA63AAD92254BF0800DF2927 /* DYAnchorGroup.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EA992549222EBC11007B4549 /* View */ = {
@@ -519,20 +689,30 @@
 			files = (
 				EAA42992222BE754004D52EC /* gif_tabYule.gif in Resources */,
 				EAA869A5222E5533003D42E6 /* DYLoginHeaderView.xib in Resources */,
+				EA63AAE8225517DB00DF2927 /* LiveEntry.plist in Resources */,
+				EA63AAE22254E68E00DF2927 /* DiscoverVideo.plist in Resources */,
 				EAA42990222BE74A004D52EC /* gif_tabYuba.gif in Resources */,
+				EA63AAEC22551F4D00DF2927 /* HomeCustom.plist in Resources */,
+				EA63AAE42254E6A200DF2927 /* DiscoverActivity.plist in Resources */,
 				EAA4298E222BE73F004D52EC /* gif_tabLive.gif in Resources */,
 				EAA4298C222BE722004D52EC /* gif_tabDiscovery.gif in Resources */,
+				EA63AACF22549FF300DF2927 /* Entertainment.plist in Resources */,
 				EAB55413222EDB2F003FA98A /* data.plist in Resources */,
 				EAA869A1222E4701003D42E6 /* DYLoginTableViewCell.xib in Resources */,
 				EAA42989222BE258004D52EC /* gif_tabFocus.gif in Resources */,
 				EA05CAE3222A9D2B00EF1CB6 /* DYRecommendNormalCell.xib in Resources */,
+				EA63AAAB2253782600DF2927 /* follows.plist in Resources */,
 				EA4411072227BF17003155EC /* LaunchScreen.storyboard in Resources */,
 				EAA86991222D5D12003D42E6 /* DYRecommendBeautyCell.xib in Resources */,
 				EA21BCB422295DFE001DBD61 /* yuba.plist in Resources */,
 				EA4411042227BF17003155EC /* Assets.xcassets in Resources */,
 				EAA8699D222E4079003D42E6 /* DYLoginViewController.xib in Resources */,
 				EA4411022227BF17003155EC /* Main.storyboard in Resources */,
+				EA63AABF225465C500DF2927 /* FollowsVideoUp.plist in Resources */,
+				EA63AAC122546B4300DF2927 /* FollowsVideoList.plist in Resources */,
+				EA63AAEA22551AB500DF2927 /* LevelIcon.plist in Resources */,
 				EAD2328B2236C1520062099C /* DYImageTitleView.xib in Resources */,
+				EA63AAE02254E67C00DF2927 /* DiscoverYuyin.plist in Resources */,
 				EA05CAF0222AD32000EF1CB6 /* DYRecommendHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,36 +770,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA4A4BA12227F4910030B8DF /* DYTabBar.swift in Sources */,
+				EA63AADA2254BF0800DF2927 /* DYAnchorGroup.swift in Sources */,
+				EA63AA6F2247305200DF2927 /* DYPlayerView.swift in Sources */,
 				EA4A4BA5222805E80030B8DF /* Common.swift in Sources */,
 				EA1AD57B223506920085F09A /* DYStartLiveViewController.swift in Sources */,
 				EA22D006222FEF32004FCA77 /* DYYuBaCommnetsView.swift in Sources */,
+				EA63AAE62254ED8200DF2927 /* DYWebViewController.swift in Sources */,
 				EA9C2F49222A887900C5863D /* DYRecommend.swift in Sources */,
 				EA63AA5222464FA400DF2927 /* XPathQuery.m in Sources */,
 				EA22D00C22311D88004FCA77 /* DYBottomToolView.swift in Sources */,
 				EA99254D222EBC41007B4549 /* DYYuBaTableViewCell.swift in Sources */,
 				EAA8698B222D5979003D42E6 /* DYRecommendBaseModel.swift in Sources */,
 				EA4A4B9C2227E73F0030B8DF /* DYNavigationController.swift in Sources */,
+				EA63AAA92253625C00DF2927 /* DYRecommendCateListViewModel.swift in Sources */,
+				EA63AAD42254A9AA00DF2927 /* DYDiscoverViewModel.swift in Sources */,
 				EA22D00A22300638004FCA77 /* DYImageContainerView.swift in Sources */,
+				EA63AABB22544D2E00DF2927 /* DYFollowsVideoModel.swift in Sources */,
 				EA21BCB12229578A001DBD61 /* DYPageTitleContentView.swift in Sources */,
+				EA63AADC2254C38100DF2927 /* DYBaseViewModel.swift in Sources */,
+				EA63AAC52254702C00DF2927 /* DYFollowsVideoListHeader.swift in Sources */,
+				EA63AAB922538E1400DF2927 /* DYDYEntertainmentViewModel.swift in Sources */,
 				EA4A4B962227E6370030B8DF /* DYFollowsViewController.swift in Sources */,
 				EAA8698D222D59E1003D42E6 /* DYRecommendBeautyModel.swift in Sources */,
 				EA05CADB222A961000EF1CB6 /* DYClassify.swift in Sources */,
+				EA63AACD2254902100DF2927 /* DYFollowsHeaderUPCell.swift in Sources */,
 				EA992550222EBCFB007B4549 /* DYYuBaTopView.swift in Sources */,
 				EAD232872236A0430062099C /* DYShowLiveController.swift in Sources */,
 				EA05CAEF222AD32000EF1CB6 /* DYRecommendHeaderView.swift in Sources */,
+				EA43CCA12256013B009D3154 /* DYBaseTool.swift in Sources */,
+				EA63AAB722538E0200DF2927 /* DYEntertainmentModel.swift in Sources */,
 				EAA869A3222E5528003D42E6 /* DYLoginHeaderView.swift in Sources */,
 				EA4410FF2227BF17003155EC /* ViewController.swift in Sources */,
 				EAB55415222F69AB003FA98A /* DYYubaContentView.swift in Sources */,
 				EA63AA5322464FA400DF2927 /* MWResolver.swift in Sources */,
+				EA63AABD2254533300DF2927 /* DYFollowsVideoCell.swift in Sources */,
+				EA63AAB2225380ED00DF2927 /* DYFollowsModel.swift in Sources */,
 				EAA869A0222E4701003D42E6 /* DYLoginTableViewCell.swift in Sources */,
 				EAA8699C222E4079003D42E6 /* DYLoginViewController.swift in Sources */,
 				EA4A4B9A2227E67F0030B8DF /* DYDiscoverViewController.swift in Sources */,
 				EA05CADD222A972D00EF1CB6 /* DYRecommendBaseController.swift in Sources */,
 				EAB55417222F76B4003FA98A /* DYYuBaModel.swift in Sources */,
+				EA63AAA62253600700DF2927 /* DYTabCateListModel.swift in Sources */,
 				EA05CAE5222AA05F00EF1CB6 /* DYRecommendNormalCell.swift in Sources */,
 				EA05CAEA222AB60600EF1CB6 /* DYRecommendNormal.swift in Sources */,
+				EA63AAD62254ABA900DF2927 /* DYBaseModel.swift in Sources */,
 				EA94A2C4222B7C4B0019EC97 /* DYTabBarItem.swift in Sources */,
 				EA63AA4A223C999E00DF2927 /* DYPlayerBackController.swift in Sources */,
+				EA63AA7122473E0E00DF2927 /* DYPlayerContainter.swift in Sources */,
+				EA63AAB022537AD000DF2927 /* DYFollowsViewModel.swift in Sources */,
+				EA63AACB22547BAB00DF2927 /* DYFollowsVideoHeaderModel.swift in Sources */,
 				EA9C2F47222A6DA200C5863D /* HttpTool.swift in Sources */,
 				EA4410FD2227BF17003155EC /* AppDelegate.swift in Sources */,
 				EA4A4B902227E57E0030B8DF /* DYRecommendViewController.swift in Sources */,
@@ -632,6 +831,7 @@
 				EA4A4BA3222800BA0030B8DF /* Image.swift in Sources */,
 				EA4A4BA7222823890030B8DF /* DYNavigationBar.swift in Sources */,
 				EAD232892236C12D0062099C /* DYImageTitleView.swift in Sources */,
+				EA63AADE2254D2F200DF2927 /* DYDiscoverActivityCell.swift in Sources */,
 				EA4A4B9E2227E9790030B8DF /* DYTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

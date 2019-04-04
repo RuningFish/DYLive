@@ -39,26 +39,13 @@ class DYTabBarViewController: UITabBarController {
         let follows = DYFollowsViewController()
         let bar = DYBarViewController()
         let discover = DYDiscoverViewController()
-        entertainment.view.backgroundColor = UIColor.green
-        follows.view.backgroundColor = UIColor.yellow
-        bar.view.backgroundColor = UIColor.blue
-        discover.view.backgroundColor = UIColor.purple
+        recommend.view.backgroundColor = UIColor.white
+        entertainment.view.backgroundColor = UIColor.white
+        follows.view.backgroundColor = UIColor.white
+        bar.view.backgroundColor = UIColor.white
+        discover.view.backgroundColor = UIColor.white
         controllers = [recommend,entertainment,follows,bar,discover]
         self.viewControllers = [recommend,entertainment,follows,bar,discover]
-//        return
-        
-        // Do any additional setup after loading the view.
-//        let recommend = getController(name: "DYRecommendViewController", title: "推荐", oriImage: "tabLive", selImage: "tabLiveHL")
-//        recommend.view.backgroundColor = UIColor.red
-//        let entertainment = getController(name: "DYEntertainmentViewController", title: "娱乐", oriImage: "tabYule", selImage: "tabYuleHL")
-//        entertainment.view.backgroundColor = UIColor.green
-//        let follows = getController(name: "DYFollowsViewController", title: "关注", oriImage: "tabFocus", selImage: "tabFocusHL")
-//        follows.view.backgroundColor = UIColor.yellow
-//        let bar = getController(name: "DYBarViewController", title: "鱼吧", oriImage: "tabYuba", selImage: "tabYubaHL")
-//        bar.view.backgroundColor = UIColor.blue
-//        let discover = getController(name: "DYDiscoverViewController", title: "发现", oriImage: "tabDiscovery", selImage: "tabDiscoveryHL")
-//        discover.view.backgroundColor = UIColor.purple
-//        self.viewControllers = [recommend,entertainment,follows,bar,discover]
     }
     
     func getController(name:String ,title:String, oriImage:String, selImage:String) -> UIViewController{

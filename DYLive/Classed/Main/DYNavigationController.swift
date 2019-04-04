@@ -21,10 +21,9 @@ class DYNavigationController: UINavigationController {
         super.viewDidLoad()
         
         self.navigationBar.isHidden = true
-//        view.addSubview(dyNavBar)
-        // Do any additional setup after loading the view.
         
-//        NotificationCenter.xsyAddobserver(self, selector: #selector(setNavigationBar), postName: KRecommendContentScrollNotification, object: nil)
+//        view.addSubview(dyNavBar)
+        
     }
 
     @objc func setNavigationBar(noti:Notification){
@@ -46,6 +45,22 @@ class DYNavigationController: UINavigationController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if (self.viewControllers.count > 1) {
+            dyNavBar.isHidden = true
+        }
+        print("push \(self.viewControllers)")
+        super.pushViewController(viewController, animated: animated)
+    }
+
+    override func popViewController(animated: Bool) -> UIViewController? {
+        if self.viewControllers.count == 1 {
+            dyNavBar.isHidden = false
+        }
+        print("pop \(self.viewControllers)")
+        return super.popViewController(animated: animated)
     }
     
     class Singleton {

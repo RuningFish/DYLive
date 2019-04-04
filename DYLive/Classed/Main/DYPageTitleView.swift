@@ -54,7 +54,7 @@ extension DYPageTitleView{
     }
     
     private func addTitleLabels() {
-        let count :  CGFloat = 6
+        let count :  CGFloat = 5
         let labelY : CGFloat = 0
         let labelW : CGFloat = frame.size.width / count
         let labelH : CGFloat = KPageTitleHeight

@@ -22,9 +22,33 @@ class DYNavigationBar: UIView {
     // 是否登陆
     var isLogin :Bool = false
     var delegate:DYNavigationBarDelegate?
+    private lazy var hot :[String] = [String]()
+    private lazy var loadHot = false
+    private lazy var afterDelay:TimeInterval = 4.0
+    private lazy var hotIndex:NSInteger = 0
     override init(frame: CGRect) {
         super.init(frame: frame)
         setSubviews()
+        print("DYNavigationBar ========")
+        if loadHot == false {
+            getTodayHot {
+                self.loadHot = true
+//                print("hot \(self.hot)")
+                DispatchQueue.main.async { [unowned self] in
+                    self.searchLabel.text = self.hot[self.hotIndex]
+                    self.perform(#selector(self.changeHotText), with: nil, afterDelay: self.afterDelay)
+                }
+            }
+        }
+    }
+    
+    @objc func changeHotText() {
+        hotIndex += 1
+        if hotIndex == hot.count{
+            hotIndex = 0
+        }
+        self.searchLabel.text = hot[hotIndex]
+        self.perform(#selector(self.changeHotText), with: nil, afterDelay: self.afterDelay)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -82,6 +106,20 @@ class DYNavigationBar: UIView {
                 make.height.equalTo(loginImageView)
             })
         }
+        
+        searchImageView.snp.makeConstraints { (make) in
+            make.left.equalTo(10)
+            make.centerY.equalToSuperview().offset(0)
+            make.width.height.equalTo(14)
+        }
+        
+        // searchLabel
+        searchLabel.snp.makeConstraints { (make) in
+            make.left.equalTo(searchImageView.snp.right).offset(10)
+            make.centerY.equalTo(searchImageView)
+            make.right.equalToSuperview().offset(-30)
+            
+        }
     }
     
     func setSubviews(){
@@ -90,6 +128,8 @@ class DYNavigationBar: UIView {
         self.addSubview(contentView)
         contentView.addSubview(loginImageView)
         contentView.addSubview(searchView)
+        searchView.addSubview(searchImageView)
+        searchView.addSubview(searchLabel)
         contentView.addSubview(historyView)
         contentView.addSubview(messageView)
         
@@ -135,11 +175,27 @@ class DYNavigationBar: UIView {
         
     }()
     
-    // search
-    lazy var searchView = { () -> UITextField in
-        var serchView = UITextField()
+    // searchView
+    lazy var searchView = { () -> UIView in
+        var serchView = UIView()
         return serchView
         
+    }()
+    
+    lazy var searchImageView = { () -> UIImageView in
+        var view = UIImageView()
+        view.image = UIImage(named: "searchBtnIcon")
+        return view
+        
+    }()
+    
+    lazy var searchLabel = { () -> UILabel in
+        var view = UILabel()
+        view.textColor = UIColor.white
+        view.textAlignment = .left
+        view.font = UIFont.systemFont(ofSize: 13)
+        view.text = ""
+        return view
     }()
     
     // history
@@ -160,4 +216,33 @@ class DYNavigationBar: UIView {
         return messageView
         
     }()
+}
+
+extension DYNavigationBar{
+    func getTodayHot(_ completionHandler: @escaping ()->()) {
+        let url = "https://apiv2.douyucdn.cn/live/search/getTodayHot?client_sys=ios"
+        HttpTool.getRequest(url: url, completionHandler: { (result) in
+            let data = result["data"] as! [[String:Any]]
+            var temp = [String]()
+            for v in data{
+                let hot = v["kw"] as! String
+                temp.append(hot)
+            }
+            self.hot = temp
+            completionHandler()
+        }) { (error) in
+            print("err === \(error)")
+        }
+    }
+    
+    
+}
+
+extension DYNavigationBar{
+    static var sharedNavigationBar : DYNavigationBar {
+        struct Static {
+            static let instance : DYNavigationBar = DYNavigationBar(frame: CGRect(x:0,y:0,width:KScreenWidth,height:KNavigationHeight))
+        }
+        return Static.instance
+    }
 }

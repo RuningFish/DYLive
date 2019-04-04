@@ -42,7 +42,6 @@ class DYBarViewController: DYBaseViewController,UITableViewDataSource,UITableVie
             let model = DYYuBaModel(dict:dic)
             self.data.append(model)
         }
-//        print("list -----> \(self.data) \(path)")
         
     }
     

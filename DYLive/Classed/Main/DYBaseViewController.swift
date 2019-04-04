@@ -22,8 +22,6 @@ class DYBaseViewController: UIViewController,DYNavigationBarDelegate{
         view.addSubview(dyNavBar)
         dyNavBar.delegate = self
         view.backgroundColor = UIColor.orange
-        
-        
     }
 }
 

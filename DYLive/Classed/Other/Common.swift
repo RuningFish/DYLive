@@ -91,6 +91,10 @@ extension NotificationCenter{
     class func xsyRemoveNotification(_ observer: Any, name:String, object: Any?) {
         NotificationCenter.default.removeObserver(observer, name: NSNotification.Name(rawValue: name), object: object)
     }
+    
+    class func xsyRemoveObserver(_ observer: Any) {
+        NotificationCenter.default.removeObserver(observer)
+    }
 }
 
 

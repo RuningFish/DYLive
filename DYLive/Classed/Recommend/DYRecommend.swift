@@ -155,7 +155,7 @@ extension DYRecommend {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let startLive = DYStartLiveViewController()
+        let startLive = DYPlayerBackController()//DYStartLiveViewController()
         startLive.view.backgroundColor = UIColor.white
         self.navigationController?.pushViewController(startLive, animated: true)
     }

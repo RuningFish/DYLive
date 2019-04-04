@@ -28,7 +28,10 @@ class DYRecommendNormalCell: UICollectionViewCell {
             count = count/Double(10)
             views.text = "\(count)万"
             content.text = normalModel?.room_name
-            let text = "\(normalModel!.game_name)\(" >")"
+            var text = ""
+            if (normalModel!.game_name as NSString).length > 0{
+                text = "\(normalModel!.game_name)\(" >")"
+            }
             type.text = text
         }
     }

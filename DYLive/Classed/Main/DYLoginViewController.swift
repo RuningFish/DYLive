@@ -90,6 +90,14 @@ extension DYLoginViewController {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 5
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let itemString = self.loginData[indexPath.section][indexPath.row]["name"] as! String
+        if itemString == "我的账户" {
+//            print("=====")
+//            self.navigationController?.pushViewController(TestViewController(), animated: true)
+        }
+    }
 }
 
 

@@ -28,7 +28,7 @@ class DYYuBaTopView: UIView {
                     make.left.equalTo(userName.snp.right).offset(margin)
                     make.top.equalTo(userIcon.snp.top).offset(0)
                     make.height.equalTo(15)
-                    make.width.equalTo(50)
+                    make.width.equalTo(30)
                 }
                 
             }else{
@@ -51,10 +51,14 @@ class DYYuBaTopView: UIView {
                     make.left.equalTo(sex.snp.right).offset(margin)
                     make.top.equalTo(userIcon.snp.top).offset(0)
                     make.height.equalTo(sex.snp.height)
-                    make.width.equalTo(50)
+                    make.width.equalTo(30)
                 }
             }
             // level
+            let levelUrl = DYBaseTool.getLevelIcon(model!.dy_level)
+            if let iconURL = URL(string: levelUrl) {
+                level.kf.setImage(with: iconURL)
+            }
             
             time.text = model?.created_at
             if Int(model!.views!) > 10000 {
@@ -148,19 +152,6 @@ extension DYYuBaTopView {
         time.sizeToFit()
         readCount.sizeToFit()
         
-        userIcon.backgroundColor = UIColor.random_color()
-//        userName.backgroundColor = UIColor.random_color()
-        sex.backgroundColor = UIColor.random_color()
-        level.backgroundColor = UIColor.random_color()
-//        time.backgroundColor = UIColor.random_color()
-//        readCount.backgroundColor = UIColor.random_color()
-//        arrow.backgroundColor = UIColor.random_color()
-        
-        userName.text = "旭旭姥姥6868"
-        time.text = "8分钟前"
-        readCount.text = "1.3万阅读"
-        userIcon.layer.cornerRadius = 18
-        userIcon.layer.masksToBounds = true
     }
     
     func setConstraint() {

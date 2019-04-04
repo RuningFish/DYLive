@@ -11,6 +11,8 @@ import UIKit
 
 class DYRecommendViewController: DYBaseViewController {
 
+    lazy var recomCateListVM :DYRecommendCateListViewModel = DYRecommendCateListViewModel()
+    lazy var cateList :[String] = [String]()
     // 推荐页推荐滚动条
     lazy var pageTitle = { () -> DYPageTitleView in
         let titles :[String] = ["分类","推荐","全部","LOL","刺激战场","绝地求生","王者荣耀"]
@@ -37,21 +39,33 @@ class DYRecommendViewController: DYBaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(pageTitle)
-        view.bringSubview(toFront: pageTitle)
+//        view.addSubview(pageTitle)
+//        view.bringSubview(toFront: pageTitle)
         view.addSubview(pageContent)
         pageTitle.delegate = self
         pageContent.delegate = self
         // Do any additional setup after loading the view.
         
+        recomCateListVM.requestData {[unowned self] in
+            var temp = ["分类","推荐","全部"]
+            for model in self.recomCateListVM.cateListData{
+                temp.append(model.cate_name!)
+            }
+            
+            DispatchQueue.main.async {
+                self.pageTitle = DYPageTitleView(frame:CGRect.make(0, KNavigationHeight, KScreenWidth, KPageTitleHeight), titles:temp)
+                self.pageTitle.delegate = self
+                self.view.addSubview(self.pageTitle)
+                
+//                print("请求完成了 ==== \(temp) page:")
+            }
+            
+//            self.view.addSubview(self.pageTitle)
+            
+        }
+        
+        
         view.backgroundColor = UIColor.orange
-        let parameters = ["limit" : "4", "offset" : "0","client_sys" : "ios", "time" : NSDate.getCurrentTime()]
-        let url = "http:capi.douyucdn.cn/api/v1/getbigDataRoom"
-        let param = ["client_sys" : "ios","time" : NSDate.getCurrentTime()]
-        
-//        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DYRecommendNotification"), object: contentOffsetY)
-        
-        print("pageTitle -> \(pageTitle.frame) pageContent -> \(pageContent.frame)")
         NotificationCenter.default.addObserver(self, selector: #selector(xxx), name:NSNotification.Name(rawValue: KRecommendContentScrollNotification) , object:nil)
     }
 
@@ -65,7 +79,10 @@ class DYRecommendViewController: DYBaseViewController {
             self.pageContent.frame = CGRect.make(0, KNavigationHeight , KScreenWidth, KScreenHeight - KNavigationHeight - KTabBarHeight )
             print("pageContrnt的高度 \(pageContent.frame.height)")
             dyNavBar.frame = CGRect.make(0, 0, KScreenWidth, KNavigationHeight)
+            
             pageContent.setNeedsLayout()
+            
+//            self.navigationController.
         }else if direction == .down{
             UIView.animate(withDuration: 0.2) {
                 self.pageTitle.frame = CGRect.make(0, KNavigationHeight, KScreenWidth, 44)
